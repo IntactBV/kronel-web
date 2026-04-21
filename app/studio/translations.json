@@ -1,0 +1,317 @@
+{
+  "en": {
+    "brand": "KRONEL STUDIO",
+    "heroTitle1": "We don't just build software.",
+    "heroTitle2": "We build systems that businesses can rely on.",
+    "heroDescription": "Kronel Studio designs and delivers custom software systems that transform how organizations operate, automate and scale.",
+    "heroExperience": "Built on over 20 years of software development experience through INTACT SRL.",
+    "bookCall": "Book a call",
+    "learnMore": "Learn more",
+    "systemImpact": "System Impact",
+    "enterpriseReady": "Enterprise-ready delivery",
+    "efficiency": "Efficiency",
+    "manualWork": "Manual work",
+    "scalability": "Scalability",
+    "high": "High",
+    "coreCapabilities": "Core capabilities",
+    "executionModel": "Execution model",
+    "businessOutcomes": "Business outcomes",
+    "contactEyebrow": "START THE CONVERSATION",
+    "contactTitle": "Let's discuss the system your business actually needs.",
+    "contactDescription": "If you are serious about building scalable internal software and operational structure, let's talk.",
+    "operatedBy": "Operated by INTACT SRL",
+    "services": [
+      {
+        "title": "Custom Software Systems",
+        "items": [
+          "Business-critical platforms",
+          "Internal tools & CRMs",
+          "Complex system integrations"
+        ]
+      },
+      {
+        "title": "Digitalization & Automation",
+        "items": [
+          "Eliminate manual workflows",
+          "Process architecture",
+          "Operational efficiency systems"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Deep Analysis",
+        "text": "We break down how your business truly operates and identify what slows it down."
+      },
+      {
+        "step": "02",
+        "title": "System Design",
+        "text": "We design a scalable architecture tailored to your exact operational needs."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "text": "We build robust systems that your business can rely on long-term."
+      }
+    ],
+    "outcomes": [
+      "Operational clarity",
+      "Reduced dependency on manual work",
+      "Scalable internal systems",
+      "Better decision-making through structure"
+    ]
+  },
+  "de": {
+    "brand": "KRONEL STUDIO",
+    "heroTitle1": "Wir entwickeln nicht einfach Software.",
+    "heroTitle2": "Wir entwickeln Systeme, auf die Unternehmen sich verlassen.",
+    "heroDescription": "Kronel Studio konzipiert und liefert maßgeschneiderte Softwaresysteme, die Unternehmen beim Strukturieren, Automatisieren und Skalieren unterstützen.",
+    "heroExperience": "Aufgebaut auf über 20 Jahren Softwareentwicklungserfahrung durch INTACT SRL.",
+    "bookCall": "Gespräch buchen",
+    "learnMore": "Mehr erfahren",
+    "systemImpact": "Systemwirkung",
+    "enterpriseReady": "Enterprise-taugliche Umsetzung",
+    "efficiency": "Effizienz",
+    "manualWork": "Manuelle Arbeit",
+    "scalability": "Skalierbarkeit",
+    "high": "Hoch",
+    "coreCapabilities": "Kernkompetenzen",
+    "executionModel": "Umsetzungsmodell",
+    "businessOutcomes": "Geschäftliche Ergebnisse",
+    "contactEyebrow": "GESPRÄCH STARTEN",
+    "contactTitle": "Lassen Sie uns über das System sprechen, das Ihr Unternehmen wirklich braucht.",
+    "contactDescription": "Wenn Sie ernsthaft skalierbare interne Software und operative Struktur aufbauen möchten, sprechen wir miteinander.",
+    "operatedBy": "Betrieben von INTACT SRL",
+    "services": [
+      {
+        "title": "Individuelle Softwaresysteme",
+        "items": [
+          "Geschäftskritische Plattformen",
+          "Interne Tools & CRMs",
+          "Komplexe Systemintegrationen"
+        ]
+      },
+      {
+        "title": "Digitalisierung & Automatisierung",
+        "items": [
+          "Manuelle Abläufe eliminieren",
+          "Prozessarchitektur",
+          "Systeme für operative Effizienz"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Tiefenanalyse",
+        "text": "Wir analysieren, wie Ihr Unternehmen tatsächlich arbeitet, und identifizieren Bremsfaktoren."
+      },
+      {
+        "step": "02",
+        "title": "Systemdesign",
+        "text": "Wir entwickeln eine skalierbare Architektur, abgestimmt auf Ihre operativen Anforderungen."
+      },
+      {
+        "step": "03",
+        "title": "Umsetzung",
+        "text": "Wir bauen robuste Systeme, auf die sich Ihr Unternehmen langfristig verlassen kann."
+      }
+    ],
+    "outcomes": [
+      "Operative Klarheit",
+      "Weniger Abhängigkeit von manueller Arbeit",
+      "Skalierbare interne Systeme",
+      "Bessere Entscheidungen durch Struktur"
+    ]
+  },
+  "fr": {
+    "brand": "KRONEL STUDIO",
+    "heroTitle1": "Nous ne créons pas simplement des logiciels.",
+    "heroTitle2": "Nous créons des systèmes sur lesquels les entreprises s'appuient.",
+    "heroDescription": "Kronel Studio conçoit et livre des systèmes logiciels sur mesure qui transforment la manière dont les entreprises fonctionnent, automatisent et se développent.",
+    "heroExperience": "Fondé sur plus de 20 ans d'expérience en développement logiciel via INTACT SRL.",
+    "bookCall": "Réserver un appel",
+    "learnMore": "En savoir plus",
+    "systemImpact": "Impact du système",
+    "enterpriseReady": "Livraison prête pour l'entreprise",
+    "efficiency": "Efficacité",
+    "manualWork": "Travail manuel",
+    "scalability": "Scalabilité",
+    "high": "Élevée",
+    "coreCapabilities": "Compétences clés",
+    "executionModel": "Modèle d'exécution",
+    "businessOutcomes": "Résultats business",
+    "contactEyebrow": "DÉMARRER LA CONVERSATION",
+    "contactTitle": "Parlons du système dont votre entreprise a réellement besoin.",
+    "contactDescription": "Si vous voulez vraiment construire des logiciels internes évolutifs et une structure opérationnelle solide, parlons-en.",
+    "operatedBy": "Exploité par INTACT SRL",
+    "services": [
+      {
+        "title": "Systèmes logiciels sur mesure",
+        "items": [
+          "Plateformes critiques pour l'activité",
+          "Outils internes & CRM",
+          "Intégrations système complexes"
+        ]
+      },
+      {
+        "title": "Digitalisation & Automatisation",
+        "items": [
+          "Éliminer les workflows manuels",
+          "Architecture des processus",
+          "Systèmes d'efficacité opérationnelle"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Analyse approfondie",
+        "text": "Nous analysons le fonctionnement réel de votre entreprise et identifions ce qui la ralentit."
+      },
+      {
+        "step": "02",
+        "title": "Conception du système",
+        "text": "Nous concevons une architecture évolutive adaptée à vos besoins opérationnels précis."
+      },
+      {
+        "step": "03",
+        "title": "Exécution",
+        "text": "Nous construisons des systèmes robustes sur lesquels votre entreprise peut compter à long terme."
+      }
+    ],
+    "outcomes": [
+      "Clarté opérationnelle",
+      "Moins de dépendance au travail manuel",
+      "Systèmes internes évolutifs",
+      "Meilleure prise de décision grâce à la structure"
+    ]
+  },
+  "el": {
+    "brand": "KRONEL STUDIO",
+    "heroTitle1": "Δεν δημιουργούμε απλώς λογισμικό.",
+    "heroTitle2": "Δημιουργούμε συστήματα στα οποία βασίζονται οι επιχειρήσεις.",
+    "heroDescription": "Το Kronel Studio σχεδιάζει και υλοποιεί προσαρμοσμένα συστήματα λογισμικού που μετασχηματίζουν τον τρόπο με τον οποίο οι εταιρείες λειτουργούν, αυτοματοποιούν και αναπτύσσονται.",
+    "heroExperience": "Χτισμένο πάνω σε περισσότερα από 20 χρόνια εμπειρίας ανάπτυξης λογισμικού μέσω της INTACT SRL.",
+    "bookCall": "Κλείστε κλήση",
+    "learnMore": "Μάθετε περισσότερα",
+    "systemImpact": "Επίδραση συστήματος",
+    "enterpriseReady": "Παράδοση έτοιμη για επιχειρήσεις",
+    "efficiency": "Αποδοτικότητα",
+    "manualWork": "Χειροκίνητη εργασία",
+    "scalability": "Κλιμάκωση",
+    "high": "Υψηλή",
+    "coreCapabilities": "Βασικές δυνατότητες",
+    "executionModel": "Μοντέλο υλοποίησης",
+    "businessOutcomes": "Επιχειρηματικά αποτελέσματα",
+    "contactEyebrow": "ΞΕΚΙΝΗΣΤΕ ΤΗ ΣΥΖΗΤΗΣΗ",
+    "contactTitle": "Ας συζητήσουμε το σύστημα που πραγματικά χρειάζεται η επιχείρησή σας.",
+    "contactDescription": "Αν θέλετε σοβαρά να χτίσετε επεκτάσιμο εσωτερικό λογισμικό και λειτουργική δομή, ας μιλήσουμε.",
+    "operatedBy": "Λειτουργεί από την INTACT SRL",
+    "services": [
+      {
+        "title": "Προσαρμοσμένα συστήματα λογισμικού",
+        "items": [
+          "Κρίσιμες επιχειρησιακές πλατφόρμες",
+          "Εσωτερικά εργαλεία & CRM",
+          "Σύνθετες ενσωματώσεις συστημάτων"
+        ]
+      },
+      {
+        "title": "Ψηφιοποίηση & Αυτοματισμός",
+        "items": [
+          "Κατάργηση χειροκίνητων ροών εργασίας",
+          "Αρχιτεκτονική διαδικασιών",
+          "Συστήματα λειτουργικής αποδοτικότητας"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Βαθιά ανάλυση",
+        "text": "Αναλύουμε πώς λειτουργεί πραγματικά η επιχείρησή σας και εντοπίζουμε τι την επιβραδύνει."
+      },
+      {
+        "step": "02",
+        "title": "Σχεδιασμός συστήματος",
+        "text": "Σχεδιάζουμε επεκτάσιμη αρχιτεκτονική προσαρμοσμένη στις ακριβείς λειτουργικές σας ανάγκες."
+      },
+      {
+        "step": "03",
+        "title": "Υλοποίηση",
+        "text": "Κατασκευάζουμε αξιόπιστα συστήματα στα οποία μπορεί να βασιστεί η επιχείρησή σας μακροπρόθεσμα."
+      }
+    ],
+    "outcomes": [
+      "Λειτουργική σαφήνεια",
+      "Μικρότερη εξάρτηση από χειροκίνητη εργασία",
+      "Επεκτάσιμα εσωτερικά συστήματα",
+      "Καλύτερες αποφάσεις μέσω δομής"
+    ]
+  },
+  "ro": {
+    "brand": "KRONEL STUDIO",
+    "heroTitle1": "Nu construim doar aplicații software.",
+    "heroTitle2": "Construim sisteme pe care companiile se bazează.",
+    "heroDescription": "Kronel Studio proiectează și livrează sisteme software custom care transformă modul în care companiile operează, automatizează și scalează.",
+    "heroExperience": "Construit pe peste 20 de ani de experiență în dezvoltare software prin INTACT SRL.",
+    "bookCall": "Programează un call",
+    "learnMore": "Află mai mult",
+    "systemImpact": "Impactul sistemului",
+    "enterpriseReady": "Livrare pregătită pentru enterprise",
+    "efficiency": "Eficiență",
+    "manualWork": "Muncă manuală",
+    "scalability": "Scalabilitate",
+    "high": "Ridicată",
+    "coreCapabilities": "Capabilități esențiale",
+    "executionModel": "Model de execuție",
+    "businessOutcomes": "Rezultate de business",
+    "contactEyebrow": "ÎNCEPE CONVERSAȚIA",
+    "contactTitle": "Hai să discutăm despre sistemul de care afacerea ta are cu adevărat nevoie.",
+    "contactDescription": "Dacă vrei serios să construiești software intern scalabil și structură operațională solidă, hai să vorbim.",
+    "operatedBy": "Operat de INTACT SRL",
+    "services": [
+      {
+        "title": "Sisteme software custom",
+        "items": [
+          "Platforme critice pentru business",
+          "Instrumente interne & CRM-uri",
+          "Integrări complexe între sisteme"
+        ]
+      },
+      {
+        "title": "Digitalizare & Automatizare",
+        "items": [
+          "Eliminarea proceselor manuale",
+          "Arhitectură de procese",
+          "Sisteme pentru eficiență operațională"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Analiză profundă",
+        "text": "Descompunem modul real în care funcționează business-ul tău și identificăm ce îl încetinește."
+      },
+      {
+        "step": "02",
+        "title": "Design de sistem",
+        "text": "Proiectăm o arhitectură scalabilă, adaptată exact nevoilor tale operaționale."
+      },
+      {
+        "step": "03",
+        "title": "Execuție",
+        "text": "Construim sisteme robuste pe care afacerea ta se poate baza pe termen lung."
+      }
+    ],
+    "outcomes": [
+      "Claritate operațională",
+      "Dependență redusă de muncă manuală",
+      "Sisteme interne scalabile",
+      "Decizii mai bune prin structură"
+    ]
+  }
+}

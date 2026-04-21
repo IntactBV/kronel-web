@@ -624,9 +624,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kronel-studio@workspace:.":
+"kronel-web@workspace:.":
   version: 0.0.0-use.local
-  resolution: "kronel-studio@workspace:."
+  resolution: "kronel-web@workspace:."
   dependencies:
     "@tailwindcss/postcss": "npm:^4.2.2"
     next: "npm:16.2.4"
