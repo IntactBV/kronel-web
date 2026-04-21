@@ -9,11 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.2.2",
+    "@tailwindcss/postcss": "^4.2.4",
     "next": "16.2.4",
+    "nodemailer": "^8.0.5",
     "react": "19.2.5",
     "react-dom": "19.2.5",
-    "tailwindcss": "^4.2.2"
+    "tailwindcss": "^4.2.4"
   },
   "packageManager": "yarn@4.14.1"
 }

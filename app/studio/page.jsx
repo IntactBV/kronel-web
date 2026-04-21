@@ -47,9 +47,9 @@ const CONTACT_FORM_COPY = {
     captchaRefresh: "Refresh challenge",
     captchaError: "Unable to load the captcha challenge right now.",
     captchaHint: "This quick check helps block automated spam.",
-    submit: "Save message",
-    sending: "Saving...",
-    success: "Message saved. You can review it in the studio inbox.",
+    submit: "Send Message",
+    sending: "Sending email...",
+    success: "Your email has been sent. We will review your brief and get back to you.",
     error: "Something went wrong while saving the message.",
     inbox: "Open inbox",
   },
@@ -1772,23 +1772,16 @@ export default function StudioPage() {
                 </svg>
                 sales@kronel.io
               </a>
-              <a
-                href="/studio/messages"
-                className="inline-flex items-center rounded-xl border px-5 py-4 text-[0.88rem] font-medium transition hover:translate-y-[-1px] lg:text-[0.95rem]"
-                style={{
-                  borderColor: theme.border,
-                  backgroundColor: theme.panelStrong,
-                  color: theme.secondaryButtonText,
-                }}
-              >
-                {contactUi.inbox}
-              </a>
             </div>
 
             {!isContactFormOpen && contactStatus.message ? (
               <div
-                className="mt-5 max-w-2xl text-[0.92rem] leading-7"
-                style={{ color: contactStatus.type === "error" ? "#ff8b8b" : theme.mutedText }}
+                className="mt-5 max-w-2xl rounded-[1.4rem] border px-5 py-4 text-[0.92rem] leading-7"
+                style={{
+                  borderColor: contactStatus.type === "error" ? "rgba(255,139,139,0.35)" : theme.border,
+                  backgroundColor: contactStatus.type === "error" ? "rgba(255,139,139,0.08)" : theme.panelStrong,
+                  color: contactStatus.type === "error" ? "#ff8b8b" : theme.text,
+                }}
               >
                 {contactStatus.message}
               </div>
@@ -1806,14 +1799,39 @@ export default function StudioPage() {
                 boxShadow: `0 24px 80px ${theme.accentSoft}`,
               }}
             >
-              <div
-                className="inline-flex items-center rounded-full px-3 py-1 text-[0.68rem] uppercase tracking-[0.22em]"
-                style={{
-                  backgroundColor: theme.panelStrong,
-                  color: theme.softText,
-                }}
-              >
-                {contactUi.title}
+              <div className="flex items-start justify-between gap-4">
+                <div
+                  className="inline-flex items-center rounded-full px-3 py-1 text-[0.68rem] uppercase tracking-[0.22em]"
+                  style={{
+                    backgroundColor: theme.panelStrong,
+                    color: theme.softText,
+                  }}
+                >
+                  {contactUi.title}
+                </div>
+
+                <button
+                  type="button"
+                  aria-label="Close form"
+                  onClick={() => {
+                    if (contactCollapseTimeoutRef.current) {
+                      window.clearTimeout(contactCollapseTimeoutRef.current);
+                    }
+                    setCaptchaLoadError("");
+                    setIsContactFormOpen(false);
+                  }}
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border transition hover:translate-y-[-1px]"
+                  style={{
+                    borderColor: theme.border,
+                    backgroundColor: theme.panel,
+                    color: theme.secondaryButtonText,
+                  }}
+                >
+                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M6 6 18 18" />
+                    <path d="M18 6 6 18" />
+                  </svg>
+                </button>
               </div>
 
               <p className="mt-4 text-[0.94rem] leading-7 lg:text-[0.98rem]" style={{ color: theme.mutedText }}>
@@ -1969,13 +1987,23 @@ export default function StudioPage() {
                   <button
                     type="submit"
                     disabled={isSubmittingContact || isCaptchaLoading || !captchaChallenge.token}
-                    className="inline-flex items-center justify-center rounded-xl px-6 py-4 text-[0.95rem] font-semibold transition disabled:cursor-not-allowed disabled:opacity-70"
+                    className="inline-flex items-center justify-center gap-2 rounded-xl px-6 py-4 text-[0.95rem] font-semibold transition disabled:cursor-not-allowed disabled:opacity-70"
                     style={{
                       backgroundColor: theme.accent,
                       color: theme.buttonText,
                     }}
                   >
-                    {isSubmittingContact ? contactUi.sending : contactUi.submit}
+                    {isSubmittingContact ? (
+                      <>
+                        <svg viewBox="0 0 24 24" className="h-4 w-4 animate-spin" fill="none">
+                          <circle cx="12" cy="12" r="9" stroke="currentColor" strokeOpacity="0.28" strokeWidth="2.4" />
+                          <path d="M21 12a9 9 0 0 0-9-9" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
+                        </svg>
+                        {contactUi.sending}
+                      </>
+                    ) : (
+                      contactUi.submit
+                    )}
                   </button>
                   <button
                     type="button"
@@ -1999,8 +2027,12 @@ export default function StudioPage() {
 
                 {contactStatus.message ? (
                   <div
-                    className="max-w-[24rem] text-[0.84rem] leading-6"
-                    style={{ color: contactStatus.type === "error" ? "#ff8b8b" : theme.mutedText }}
+                    className="max-w-[24rem] rounded-[1.2rem] border px-4 py-3 text-[0.84rem] leading-6"
+                    style={{
+                      borderColor: contactStatus.type === "error" ? "rgba(255,139,139,0.35)" : theme.border,
+                      backgroundColor: contactStatus.type === "error" ? "rgba(255,139,139,0.08)" : theme.panelStrong,
+                      color: contactStatus.type === "error" ? "#ff8b8b" : theme.text,
+                    }}
                   >
                     {contactStatus.message}
                   </div>

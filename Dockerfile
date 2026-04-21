@@ -38,6 +38,11 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV HOSTNAME=0.0.0.0
 ENV PORT=8080
+ENV SMTP_HOST=""
+ENV SMTP_PORT=""
+ENV SMTP_USER=""
+ENV SMTP_PASS=""
+ENV SMTP_FROM=""
 
 RUN apk add --no-cache libc6-compat
 RUN corepack enable

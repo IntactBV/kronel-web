@@ -1,5 +1,75 @@
 [
   {
+    "id": "4e682119-f624-41ca-8702-731b74831f24",
+    "name": "Gabi Balasz",
+    "email": "gabi@bitvice.ro",
+    "company": "Intact",
+    "message": "Concluzie\n\nAi acum un setup de producție corect pentru:\n\napex domain: kronel.io\nsubdomain: studio.kronel.io\nCloud Run în spate\nApplication Load Balancer în față\nSSL managed de Google\nredirect HTTP → HTTPS\n\nDacă vrei, următorul pas logic este să facem unul din astea:\n\nredirect permanent kronel.io → studio.kronel.io\nlanding page pe kronel.io și app pe studio.kronel.io\nblocarea accesului direct pe URL-ul run.app și verificarea că nu mai este expus public",
+    "language": "en",
+    "page": "studio",
+    "createdAt": "2026-04-21T22:06:18.024Z"
+  },
+  {
+    "id": "d77e25fa-eabd-48af-9edb-c7346931b2c9",
+    "name": "Gabi",
+    "email": "gabi@bitvice.ro",
+    "company": "Intact",
+    "message": "Test",
+    "language": "en",
+    "page": "studio",
+    "createdAt": "2026-04-21T22:02:50.872Z"
+  },
+  {
+    "id": "b8ab02a1-d9c2-4851-95ac-413c27c81442",
+    "name": "assdfasd",
+    "email": "gabi@bitvice.ro",
+    "company": "Intact",
+    "message": "contact-messages",
+    "language": "en",
+    "page": "studio",
+    "createdAt": "2026-04-21T22:01:56.651Z"
+  },
+  {
+    "id": "8659ae09-0cb1-45f7-a2d9-ed2a69a4e3b7",
+    "name": "aaa",
+    "email": "a@a.com",
+    "company": "ttt",
+    "message": "ttt",
+    "language": "en",
+    "page": "studio",
+    "createdAt": "2026-04-21T22:00:41.605Z"
+  },
+  {
+    "id": "9d1150dc-418f-4c8a-b5a9-5e98a53e7342",
+    "name": "aaa",
+    "email": "a@a.com",
+    "company": "aaa",
+    "message": "ssss",
+    "language": "en",
+    "page": "studio",
+    "createdAt": "2026-04-21T21:58:53.408Z"
+  },
+  {
+    "id": "127d7944-0ef2-4845-84df-282cf3a0c0db",
+    "name": "Aaa BBB",
+    "email": "aaa@aa.com",
+    "company": "Test",
+    "message": "Mesage",
+    "language": "en",
+    "page": "studio",
+    "createdAt": "2026-04-21T21:57:11.223Z"
+  },
+  {
+    "id": "06654203-3787-45bf-961e-597580ad8a87",
+    "name": "aaa",
+    "email": "a@a.com",
+    "company": "Company",
+    "message": "Message",
+    "language": "en",
+    "page": "studio",
+    "createdAt": "2026-04-21T21:53:01.560Z"
+  },
+  {
     "id": "467d231e-485f-4ac4-a8f0-937f1032a408",
     "name": "AAA",
     "email": "A@A.COM",
