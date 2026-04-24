@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 /* Ultra high-conversion enterprise landing for studio.kronel.io */
@@ -64,6 +65,18 @@ const translations = {
       "Kronel Studio designs and delivers custom software systems that transform how organizations operate, automate and scale.",
     heroExperience:
       "Built on over 20 years of software development experience through INTACT SRL.",
+    visionEyebrow: "Why Kronel exists",
+    visionTitle: "Our vision is a business that runs on clarity, not operational noise.",
+    visionDescription:
+      "We believe companies should operate through dependable systems instead of fragmented tools, manual work, and process hidden in people's heads. We build the structure that makes execution cleaner, decisions faster, and growth more stable.",
+    visionVisualTitle: "Systems that replace noise with signal.",
+    visionVisualCaption: "Fragmented operations resolve into one dependable flow.",
+    engineeringEyebrow: "Built for real operations",
+    engineeringTitle: "Engineered for speed, resilience, and systems that fit the business.",
+    engineeringDescription:
+      "Our delivery approach is built around platforms that stay responsive under pressure, keep data structured and reliable, scale without operational drag, and support intelligent automation shaped around how your business actually works.",
+    engineeringVisualTitle: "Precision infrastructure, adaptable flow.",
+    engineeringVisualCaption: "Performance, continuity, and automation designed around the way the business moves.",
     bookCall: "Book a call",
     learnMore: "Learn more",
     systemImpact: "System Impact",
@@ -121,6 +134,38 @@ const translations = {
       "Scalable internal systems",
       "Better decision-making through structure",
     ],
+    visionPoints: [
+      {
+        title: "From fragmented to connected",
+        text: "Disconnected workflows, spreadsheets, and approvals are consolidated into one operational system.",
+      },
+      {
+        title: "From reactive to structured",
+        text: "Teams stop improvising around bottlenecks and start operating with clear logic and dependable flow.",
+      },
+      {
+        title: "From growth to durable scale",
+        text: "The business gains infrastructure that can absorb more people, more work, and more complexity without chaos.",
+      },
+    ],
+    engineeringPillars: [
+      {
+        title: "Responsive under load",
+        text: "Critical workflows stay fast and usable even as data volume, users, and operational pressure increase.",
+      },
+      {
+        title: "Structured, reliable data",
+        text: "Information stays consistent, searchable, and trustworthy so teams can act with more confidence.",
+      },
+      {
+        title: "Scalable by design",
+        text: "The system is built to handle growth cleanly instead of becoming fragile as complexity expands.",
+      },
+      {
+        title: "Automation that fits reality",
+        text: "Automated and intelligent workflows are shaped around the business model instead of forcing the business to adapt to the tool.",
+      },
+    ],
   },
   de: {
     brand: "KRONEL STUDIO",
@@ -130,6 +175,18 @@ const translations = {
       "Kronel Studio konzipiert und liefert maßgeschneiderte Softwaresysteme, die Unternehmen beim Strukturieren, Automatisieren und Skalieren unterstützen.",
     heroExperience:
       "Aufgebaut auf über 20 Jahren Softwareentwicklungserfahrung durch INTACT SRL.",
+    visionEyebrow: "Warum Kronel existiert",
+    visionTitle: "Unsere Vision ist ein Unternehmen, das auf Klarheit statt auf operativem Rauschen basiert.",
+    visionDescription:
+      "Wir sind überzeugt, dass Unternehmen mit verlässlichen Systemen arbeiten sollten statt mit fragmentierten Tools, manueller Arbeit und Prozessen, die nur im Kopf einzelner Menschen existieren. Wir bauen die Struktur, die Ausführung sauberer, Entscheidungen schneller und Wachstum stabiler macht.",
+    visionVisualTitle: "Systeme, die Rauschen durch klare Signale ersetzen.",
+    visionVisualCaption: "Fragmentierte Abläufe werden zu einem verlässlichen Gesamtfluss.",
+    engineeringEyebrow: "Für reale Abläufe gebaut",
+    engineeringTitle: "Entwickelt für Geschwindigkeit, Stabilität und Systeme, die zum Unternehmen passen.",
+    engineeringDescription:
+      "Unser Ansatz zielt auf Plattformen, die auch unter Last schnell bleiben, Daten sauber und verlässlich halten, ohne operative Reibung skalieren und intelligente Automatisierung entlang Ihrer realen Abläufe ermöglichen.",
+    engineeringVisualTitle: "Präzise Infrastruktur, anpassungsfähiger Fluss.",
+    engineeringVisualCaption: "Performance, Kontinuität und Automatisierung entlang echter Geschäftsbewegung.",
     bookCall: "Gespräch buchen",
     learnMore: "Mehr erfahren",
     systemImpact: "Systemwirkung",
@@ -187,6 +244,38 @@ const translations = {
       "Skalierbare interne Systeme",
       "Bessere Entscheidungen durch Struktur",
     ],
+    visionPoints: [
+      {
+        title: "Von fragmentiert zu verbunden",
+        text: "Getrennte Abläufe, Tabellen und Freigaben werden zu einem gemeinsamen operativen System zusammengeführt.",
+      },
+      {
+        title: "Von reaktiv zu strukturiert",
+        text: "Teams improvisieren nicht mehr um Engpässe herum, sondern arbeiten mit klarer Logik und verlässlichem Ablauf.",
+      },
+      {
+        title: "Von Wachstum zu belastbarer Skalierung",
+        text: "Das Unternehmen erhält eine Infrastruktur, die mehr Menschen, mehr Arbeit und mehr Komplexität ohne Chaos aufnehmen kann.",
+      },
+    ],
+    engineeringPillars: [
+      {
+        title: "Reaktionsschnell unter Last",
+        text: "Kritische Abläufe bleiben schnell und nutzbar, auch wenn Datenmenge, Nutzerzahl und Druck steigen.",
+      },
+      {
+        title: "Strukturierte, verlässliche Daten",
+        text: "Informationen bleiben konsistent, auffindbar und belastbar, damit Teams sicherer handeln können.",
+      },
+      {
+        title: "Auf Skalierung ausgelegt",
+        text: "Das System ist für Wachstum gebaut und wird nicht fragil, sobald die Komplexität zunimmt.",
+      },
+      {
+        title: "Automatisierung, die zur Realität passt",
+        text: "Automatisierte und intelligente Abläufe orientieren sich am Geschäftsmodell statt das Unternehmen an das Werkzeug zu zwingen.",
+      },
+    ],
   },
   fr: {
     brand: "KRONEL STUDIO",
@@ -196,6 +285,18 @@ const translations = {
       "Kronel Studio conçoit et livre des systèmes logiciels sur mesure qui transforment la manière dont les entreprises fonctionnent, automatisent et se développent.",
     heroExperience:
       "Fondé sur plus de 20 ans d'expérience en développement logiciel via INTACT SRL.",
+    visionEyebrow: "Pourquoi Kronel existe",
+    visionTitle: "Notre vision est une entreprise qui fonctionne avec clarté, pas dans le bruit opérationnel.",
+    visionDescription:
+      "Nous pensons que les entreprises doivent fonctionner avec des systèmes fiables plutôt qu'avec des outils fragmentés, du travail manuel et des processus enfermés dans la tête des personnes. Nous construisons la structure qui rend l'exécution plus nette, les décisions plus rapides et la croissance plus stable.",
+    visionVisualTitle: "Des systèmes qui remplacent le bruit par un signal clair.",
+    visionVisualCaption: "Les opérations fragmentées convergent vers un flux fiable.",
+    engineeringEyebrow: "Pensé pour les opérations réelles",
+    engineeringTitle: "Conçu pour la vitesse, la résilience et des systèmes adaptés au métier.",
+    engineeringDescription:
+      "Notre approche privilégie des plateformes qui restent réactives sous pression, gardent des données structurées et fiables, montent en charge sans friction opérationnelle et soutiennent une automatisation intelligente alignée sur votre réalité métier.",
+    engineeringVisualTitle: "Infrastructure précise, flux adaptable.",
+    engineeringVisualCaption: "Performance, continuité et automatisation conçues autour du mouvement réel de l'entreprise.",
     bookCall: "Réserver un appel",
     learnMore: "En savoir plus",
     systemImpact: "Impact du système",
@@ -253,6 +354,38 @@ const translations = {
       "Systèmes internes évolutifs",
       "Meilleure prise de décision grâce à la structure",
     ],
+    visionPoints: [
+      {
+        title: "Du fragmenté au connecté",
+        text: "Les workflows dispersés, les tableurs et les validations sont réunis dans un seul système opérationnel.",
+      },
+      {
+        title: "Du réactif au structuré",
+        text: "Les équipes cessent d'improviser face aux blocages et travaillent avec une logique claire et un flux fiable.",
+      },
+      {
+        title: "De la croissance à l'échelle durable",
+        text: "L'entreprise obtient une infrastructure capable d'absorber plus d'équipes, plus de travail et plus de complexité sans chaos.",
+      },
+    ],
+    engineeringPillars: [
+      {
+        title: "Réactif sous charge",
+        text: "Les flux critiques restent rapides et exploitables même lorsque les volumes, les utilisateurs et la pression augmentent.",
+      },
+      {
+        title: "Données structurées et fiables",
+        text: "L'information reste cohérente, exploitable et digne de confiance pour décider avec plus d'assurance.",
+      },
+      {
+        title: "Évolutif par conception",
+        text: "Le système est pensé pour grandir proprement au lieu de devenir fragile quand la complexité augmente.",
+      },
+      {
+        title: "Une automatisation ancrée dans le réel",
+        text: "Les workflows automatisés et intelligents s'adaptent au métier au lieu d'obliger le métier à s'adapter à l'outil.",
+      },
+    ],
   },
   el: {
     brand: "KRONEL STUDIO",
@@ -262,6 +395,18 @@ const translations = {
       "Το Kronel Studio σχεδιάζει και υλοποιεί προσαρμοσμένα συστήματα λογισμικού που μετασχηματίζουν τον τρόπο με τον οποίο οι εταιρείες λειτουργούν, αυτοματοποιούν και αναπτύσσονται.",
     heroExperience:
       "Χτισμένο πάνω σε περισσότερα από 20 χρόνια εμπειρίας ανάπτυξης λογισμικού μέσω της INTACT SRL.",
+    visionEyebrow: "Γιατί υπάρχει η Kronel",
+    visionTitle: "Το όραμά μας είναι μια επιχείρηση που λειτουργεί με καθαρότητα, όχι με λειτουργικό θόρυβο.",
+    visionDescription:
+      "Πιστεύουμε ότι οι εταιρείες πρέπει να λειτουργούν μέσα από αξιόπιστα συστήματα και όχι μέσα από κατακερματισμένα εργαλεία, χειροκίνητη εργασία και διαδικασίες που υπάρχουν μόνο στο μυαλό των ανθρώπων. Χτίζουμε τη δομή που κάνει την εκτέλεση πιο καθαρή, τις αποφάσεις ταχύτερες και την ανάπτυξη πιο σταθερή.",
+    visionVisualTitle: "Συστήματα που μετατρέπουν τον θόρυβο σε καθαρό σήμα.",
+    visionVisualCaption: "Οι κατακερματισμένες λειτουργίες γίνονται μία αξιόπιστη ροή.",
+    engineeringEyebrow: "Χτισμένο για πραγματικές λειτουργίες",
+    engineeringTitle: "Σχεδιασμένο για ταχύτητα, ανθεκτικότητα και συστήματα που ταιριάζουν στην επιχείρηση.",
+    engineeringDescription:
+      "Η προσέγγισή μας δίνει πλατφόρμες που παραμένουν γρήγορες υπό πίεση, κρατούν τα δεδομένα δομημένα και αξιόπιστα, κλιμακώνονται χωρίς λειτουργική τριβή και υποστηρίζουν έξυπνους αυτοματισμούς προσαρμοσμένους στον πραγματικό τρόπο λειτουργίας της επιχείρησης.",
+    engineeringVisualTitle: "Ακριβής υποδομή, προσαρμόσιμη ροή.",
+    engineeringVisualCaption: "Απόδοση, συνέχεια και αυτοματοποίηση σχεδιασμένες γύρω από την πραγματική κίνηση της επιχείρησης.",
     bookCall: "Κλείστε κλήση",
     learnMore: "Μάθετε περισσότερα",
     systemImpact: "Επίδραση συστήματος",
@@ -319,6 +464,38 @@ const translations = {
       "Επεκτάσιμα εσωτερικά συστήματα",
       "Καλύτερες αποφάσεις μέσω δομής",
     ],
+    visionPoints: [
+      {
+        title: "Από τον κατακερματισμό στη σύνδεση",
+        text: "Διάσπαρτες ροές εργασίας, αρχεία και εγκρίσεις ενοποιούνται σε ένα κοινό λειτουργικό σύστημα.",
+      },
+      {
+        title: "Από την αντίδραση στη δομή",
+        text: "Οι ομάδες σταματούν να αυτοσχεδιάζουν γύρω από τα εμπόδια και λειτουργούν με καθαρή λογική και αξιόπιστη ροή.",
+      },
+      {
+        title: "Από την ανάπτυξη στη βιώσιμη κλιμάκωση",
+        text: "Η επιχείρηση αποκτά υποδομή που αντέχει περισσότερους ανθρώπους, περισσότερη δουλειά και μεγαλύτερη πολυπλοκότητα χωρίς χάος.",
+      },
+    ],
+    engineeringPillars: [
+      {
+        title: "Ανταπόκριση υπό φόρτο",
+        text: "Οι κρίσιμες ροές μένουν γρήγορες και χρηστικές ακόμη κι όταν αυξάνονται ο όγκος, οι χρήστες και η πίεση.",
+      },
+      {
+        title: "Δομημένα και αξιόπιστα δεδομένα",
+        text: "Η πληροφορία παραμένει συνεπής, αναζητήσιμη και αξιόπιστη ώστε οι ομάδες να κινούνται με περισσότερη βεβαιότητα.",
+      },
+      {
+        title: "Κλιμάκωση από τον σχεδιασμό",
+        text: "Το σύστημα είναι χτισμένο για ανάπτυξη χωρίς να γίνεται εύθραυστο όσο αυξάνεται η πολυπλοκότητα.",
+      },
+      {
+        title: "Αυτοματοποίηση που ταιριάζει στην πραγματικότητα",
+        text: "Οι αυτοματοποιημένες και έξυπνες ροές προσαρμόζονται στο επιχειρησιακό μοντέλο αντί να το αναγκάζουν να προσαρμοστεί στο εργαλείο.",
+      },
+    ],
   },
   ro: {
     brand: "KRONEL STUDIO",
@@ -328,6 +505,18 @@ const translations = {
       "Kronel Studio proiectează și livrează sisteme software custom care transformă modul în care companiile operează, automatizează și scalează.",
     heroExperience:
       "Construit pe peste 20 de ani de experiență în dezvoltare software prin INTACT SRL.",
+    visionEyebrow: "De ce există Kronel",
+    visionTitle: "Viziunea noastră este o companie care funcționează prin claritate, nu prin zgomot operațional.",
+    visionDescription:
+      "Credem că firmele ar trebui să opereze prin sisteme de încredere, nu prin tool-uri fragmentate, muncă manuală și procese ținute doar în capul oamenilor. Construim structura care face execuția mai clară, deciziile mai rapide și creșterea mai stabilă.",
+    visionVisualTitle: "Sisteme care înlocuiesc zgomotul cu semnal clar.",
+    visionVisualCaption: "Operațiunile fragmentate se transformă într-un singur flux de încredere.",
+    engineeringEyebrow: "Construit pentru operațiuni reale",
+    engineeringTitle: "Proiectat pentru viteză, reziliență și sisteme care se potrivesc business-ului.",
+    engineeringDescription:
+      "Abordarea noastră urmărește platforme care rămân rapide sub presiune, păstrează datele structurate și de încredere, scalează fără fricțiune operațională și susțin automatizări inteligente modelate după felul real în care funcționează compania.",
+    engineeringVisualTitle: "Infrastructură precisă, flux adaptabil.",
+    engineeringVisualCaption: "Performanță, continuitate și automatizare gândite în jurul mișcării reale a business-ului.",
     bookCall: "Programează un call",
     learnMore: "Află mai mult",
     systemImpact: "Impactul sistemului",
@@ -384,6 +573,38 @@ const translations = {
       "Dependență redusă de muncă manuală",
       "Sisteme interne scalabile",
       "Decizii mai bune prin structură",
+    ],
+    visionPoints: [
+      {
+        title: "De la fragmentat la conectat",
+        text: "Fluxurile de lucru separate, tabelele și aprobările sunt reunite într-un singur sistem operațional.",
+      },
+      {
+        title: "De la reactiv la structurat",
+        text: "Echipele nu mai improvizează în jurul blocajelor, ci lucrează cu logică clară și flux de încredere.",
+      },
+      {
+        title: "De la creștere la scalare durabilă",
+        text: "Business-ul capătă infrastructura necesară pentru a absorbi mai mulți oameni, mai mult volum și mai multă complexitate fără haos.",
+      },
+    ],
+    engineeringPillars: [
+      {
+        title: "Rapid sub presiune",
+        text: "Fluxurile critice rămân rapide și utilizabile chiar când cresc volumul, utilizatorii și presiunea operațională.",
+      },
+      {
+        title: "Date structurate și de încredere",
+        text: "Informația rămâne coerentă, ușor de urmărit și credibilă, astfel încât echipele să decidă cu mai multă claritate.",
+      },
+      {
+        title: "Scalare prin design",
+        text: "Sistemul este construit să crească sănătos, fără să devină fragil pe măsură ce complexitatea se extinde.",
+      },
+      {
+        title: "Automatizare potrivită realității",
+        text: "Fluxurile automate și inteligente sunt modelate după business, nu după constrângerile unui tool.",
+      },
     ],
   },
 };
@@ -1009,6 +1230,34 @@ export default function StudioPage() {
   const brandLogoClass = "h-9 w-9 sm:h-10 sm:w-10 lg:h-[4.75rem] lg:w-[4.75rem] 2xl:h-[5.5rem] 2xl:w-[5.5rem]";
   const contactLogoClass = "h-10 w-10 sm:h-11 sm:w-11 lg:h-[5.25rem] lg:w-[5.25rem]";
   const footerLogoClass = "h-5 w-5 sm:h-6 sm:w-6 lg:h-[2.625rem] lg:w-[2.625rem]";
+  const sectionEyebrowStyle = {
+    borderColor: theme.border,
+    backgroundColor: theme.panelStrong,
+    color: theme.softText,
+  };
+  const panelShellStyle = (glow = "rgba(0,0,0,0.12)") => ({
+    borderColor: theme.border,
+    background: `linear-gradient(180deg, ${theme.panelStrong} 0%, ${theme.panel} 100%)`,
+    boxShadow: `0 24px 80px ${glow}`,
+  });
+  const panelTopLineStyle = {
+    background: `linear-gradient(90deg, transparent 0%, ${theme.accent} 50%, transparent 100%)`,
+    opacity: 0.86,
+  };
+  const chipStyle = {
+    backgroundColor: theme.panelStrong,
+    color: theme.softText,
+  };
+  const iconTileStyle = {
+    borderColor: theme.border,
+    backgroundColor: theme.panelStrong,
+    color: theme.accent,
+  };
+  const inputSurfaceStyle = {
+    borderColor: theme.border,
+    backgroundColor: theme.panel,
+    color: theme.text,
+  };
 
   return (
     <div
@@ -1344,6 +1593,177 @@ export default function StudioPage() {
       </RevealBlock>
 
       <RevealBlock
+        variant="slide-up"
+        className={`relative overflow-hidden ${sectionShell} border-t`}
+        style={{ borderColor: theme.border }}
+      >
+        <div className="pointer-events-none absolute inset-0">
+          <Image
+            src={resolvedTheme === "light" ? "/images/studio/vision-abstract-light-v1.png" : "/images/studio/vision-abstract-v1.png"}
+            alt=""
+            fill
+            className={resolvedTheme === "light" ? "object-cover object-[70%_center] opacity-84" : "object-cover object-[76%_center] opacity-28"}
+            sizes="100vw"
+          />
+
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                resolvedTheme === "light"
+                  ? "linear-gradient(90deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.66) 28%, rgba(255,255,255,0.28) 54%, rgba(255,255,255,0.56) 76%, rgba(255,255,255,0.86) 100%)"
+                  : `linear-gradient(90deg, ${theme.page} 0%, rgba(6,8,14,0.58) 26%, rgba(6,8,14,0.28) 54%, rgba(6,8,14,0.66) 76%, ${theme.page} 100%)`,
+            }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                resolvedTheme === "light"
+                  ? "linear-gradient(180deg, rgba(255,255,255,0.72) 0%, rgba(255,255,255,0.16) 18%, rgba(255,255,255,0.08) 82%, rgba(255,255,255,0.68) 100%)"
+                  : `linear-gradient(180deg, ${theme.page} 0%, transparent 18%, transparent 82%, ${theme.page} 100%)`,
+            }}
+          />
+          <div
+            className="absolute right-[12%] top-[16%] h-[22rem] w-[22rem] rounded-full blur-[120px]"
+            style={{ backgroundColor: theme.accentSoft, opacity: resolvedTheme === "light" ? 0.16 : 0.32 }}
+          />
+          <div
+            className="absolute left-[18%] bottom-[12%] h-[16rem] w-[16rem] rounded-full blur-[100px]"
+            style={{
+              backgroundColor: resolvedTheme === "light" ? "rgba(138,99,255,0.12)" : "rgba(133,212,255,0.08)",
+              opacity: resolvedTheme === "light" ? 0.18 : 0.28,
+            }}
+          />
+        </div>
+
+        <div className="relative z-10 grid gap-10 xl:grid-cols-[minmax(0,1.08fr)_auto] xl:items-start">
+          <div className="max-w-4xl">
+            <div
+              className="inline-flex items-center rounded-full border px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.24em]"
+              style={{
+                borderColor: theme.border,
+                backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.44)" : "rgba(10,12,18,0.42)",
+                color: theme.softText,
+                backdropFilter: "blur(14px)",
+              }}
+            >
+              {t.visionEyebrow}
+            </div>
+
+            <h2 className="font-display mt-5 max-w-[13ch] text-[2rem] font-bold leading-[1.02] sm:text-[2.25rem] lg:text-[2.9rem]">
+              {t.visionTitle}
+            </h2>
+
+            <p
+              className="mt-6 max-w-3xl text-[0.98rem] leading-7 sm:text-[1.04rem] lg:text-[1.1rem] lg:leading-8"
+              style={{ color: theme.mutedText }}
+            >
+              {t.visionDescription}
+            </p>
+          </div>
+
+          <div
+            className="hidden xl:block max-w-[18rem] justify-self-end rounded-[1.55rem] border px-5 py-5"
+            style={{
+              borderColor: resolvedTheme === "light" ? "rgba(31,28,44,0.1)" : "rgba(255,255,255,0.08)",
+              backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.4)" : "rgba(6,9,18,0.28)",
+              backdropFilter: "blur(14px)",
+            }}
+          >
+            <div
+              className="text-[0.68rem] font-medium uppercase tracking-[0.24em]"
+              style={{ color: resolvedTheme === "light" ? "rgba(34,28,52,0.68)" : "rgba(236,229,255,0.72)" }}
+            >
+              {t.visionEyebrow}
+            </div>
+            <p className="mt-3 text-[1rem] leading-7 sm:text-[1.04rem]" style={{ color: resolvedTheme === "light" ? "#211c2e" : "#f5f2ff" }}>
+              {t.visionVisualTitle}
+            </p>
+            <div
+              className="mt-5 text-[0.78rem] uppercase tracking-[0.2em]"
+              style={{ color: theme.softText }}
+            >
+              {t.visionVisualCaption}
+            </div>
+          </div>
+        </div>
+
+        <div className="relative z-10 mt-12">
+          <div
+            className="mb-8 h-px w-full"
+            style={{
+              background: `linear-gradient(90deg, ${theme.accent} 0%, ${theme.accentSoft} 30%, transparent 72%)`,
+              opacity: 0.6,
+            }}
+          />
+
+          <div className="grid max-w-5xl gap-5 sm:grid-cols-2 xl:max-w-[62rem]">
+            {t.visionPoints.map((point, index) => (
+              <div
+                key={point.title}
+                className="group relative overflow-hidden rounded-[1.65rem] p-5 transition-all duration-300 lg:p-6"
+                style={{
+                  backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.18)" : "rgba(14,16,22,0.34)",
+                  boxShadow: resolvedTheme === "light" ? "inset 0 0 0 1px rgba(31,28,44,0.08)" : `inset 0 0 0 1px rgba(255,255,255,0.08)`,
+                  transform: index % 2 === 1 ? "translateY(1.1rem)" : "none",
+                  backdropFilter: resolvedTheme === "light" ? "blur(3px)" : "blur(6px)",
+                }}
+              >
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      resolvedTheme === "light"
+                        ? "linear-gradient(180deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.03) 100%)"
+                        : `linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0) 100%)`,
+                  }}
+                />
+                <div
+                  className="absolute left-0 top-0 h-full w-px"
+                  style={{
+                    background: `linear-gradient(180deg, ${theme.accent} 0%, ${theme.accentSoft} 100%)`,
+                    opacity: 0.72,
+                  }}
+                />
+
+                <div className="relative z-10">
+                  <div className="flex items-start justify-between gap-4">
+                    <div
+                      className="flex h-10 w-10 items-center justify-center rounded-full border text-[0.72rem] font-semibold uppercase tracking-[0.2em]"
+                      style={{
+                        borderColor: resolvedTheme === "light" ? "rgba(31,28,44,0.1)" : "rgba(255,255,255,0.1)",
+                        backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.16)" : "rgba(255,255,255,0.03)",
+                        color: theme.accent,
+                      }}
+                    >
+                      0{index + 1}
+                    </div>
+
+                    <div
+                      className="h-2.5 w-2.5 rounded-full"
+                      style={{
+                        backgroundColor: theme.accent,
+                        boxShadow: `0 0 0 6px ${theme.accentSoft}`,
+                      }}
+                    />
+                  </div>
+
+                  <h3 className="font-display mt-6 max-w-[14ch] text-[1.12rem] font-semibold leading-[1.15] sm:text-[1.18rem] lg:text-[1.26rem]">
+                    {point.title}
+                  </h3>
+
+                  <p className="mt-4 max-w-[30ch] text-[0.93rem] leading-7 lg:text-[0.98rem]" style={{ color: theme.mutedText }}>
+                    {point.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </RevealBlock>
+
+      <RevealBlock
         id="services"
         variant="slide-up"
         className={`${sectionShell} border-t`}
@@ -1353,11 +1773,7 @@ export default function StudioPage() {
           <div>
             <div
               className="inline-flex items-center rounded-full border px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.24em]"
-              style={{
-                borderColor: theme.border,
-                backgroundColor: theme.panelStrong,
-                color: theme.softText,
-              }}
+              style={sectionEyebrowStyle}
             >
               {t.systemImpact}
             </div>
@@ -1379,18 +1795,11 @@ export default function StudioPage() {
             <div
               key={service.title}
               className="group relative overflow-hidden rounded-[2rem] border p-6 transition-all duration-300 lg:p-8"
-              style={{
-                borderColor: theme.border,
-                background: `linear-gradient(180deg, ${theme.panelStrong} 0%, ${theme.panel} 100%)`,
-                boxShadow: `0 24px 80px ${index === 0 ? theme.accentSoft : "rgba(0,0,0,0.12)"}`,
-              }}
+              style={panelShellStyle(index === 0 ? theme.accentSoft : "rgba(0,0,0,0.12)")}
             >
               <div
                 className="absolute inset-x-0 top-0 h-px"
-                style={{
-                  background: `linear-gradient(90deg, transparent 0%, ${theme.accent} 50%, transparent 100%)`,
-                  opacity: 0.9,
-                }}
+                style={panelTopLineStyle}
               />
               <div
                 className="absolute -right-10 top-0 h-36 w-36 rounded-full blur-3xl"
@@ -1404,11 +1813,7 @@ export default function StudioPage() {
                 <div className="flex items-start justify-between gap-6">
                   <div
                     className="flex h-14 w-14 items-center justify-center rounded-2xl border"
-                    style={{
-                      borderColor: theme.border,
-                      backgroundColor: theme.panelStrong,
-                      color: theme.accent,
-                    }}
+                    style={iconTileStyle}
                   >
                     {index === 0 ? (
                       <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="1.7">
@@ -1435,10 +1840,7 @@ export default function StudioPage() {
                 </h3>
                 <div
                   className="mt-3 inline-flex items-center rounded-full px-3 py-1 text-[0.68rem] uppercase tracking-[0.22em]"
-                  style={{
-                    backgroundColor: theme.panelStrong,
-                    color: theme.softText,
-                  }}
+                  style={chipStyle}
                 >
                   {index === 0 ? t.executionModel : t.enterpriseReady}
                 </div>
@@ -1471,6 +1873,200 @@ export default function StudioPage() {
       </RevealBlock>
 
       <RevealBlock
+        variant="expand"
+        className={`relative overflow-hidden ${sectionShell} border-t`}
+        style={{ borderColor: theme.border }}
+      >
+        <div className="pointer-events-none absolute inset-0">
+          <Image
+            src={resolvedTheme === "light" ? "/images/studio/engineering-abstract-light-v1.png" : "/images/studio/engineering-abstract-v1.png"}
+            alt=""
+            fill
+            className={resolvedTheme === "light" ? "object-cover object-[28%_center] opacity-42" : "object-cover object-[22%_center] opacity-30"}
+            sizes="100vw"
+          />
+
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                resolvedTheme === "light"
+                  ? "linear-gradient(90deg, rgba(255,255,255,0.76) 0%, rgba(255,255,255,0.34) 20%, rgba(255,255,255,0.08) 48%, rgba(255,255,255,0.22) 72%, rgba(255,255,255,0.7) 100%)"
+                  : `linear-gradient(90deg, ${theme.page} 0%, rgba(6,8,14,0.76) 34%, rgba(6,8,14,0.9) 58%, ${theme.page} 100%)`,
+            }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                resolvedTheme === "light"
+                  ? "linear-gradient(180deg, rgba(255,255,255,0.58) 0%, rgba(255,255,255,0.08) 18%, rgba(255,255,255,0.04) 82%, rgba(255,255,255,0.54) 100%)"
+                  : `linear-gradient(180deg, ${theme.page} 0%, transparent 18%, transparent 82%, ${theme.page} 100%)`,
+            }}
+          />
+          <div
+            className="absolute left-[10%] top-[18%] h-[22rem] w-[22rem] rounded-full blur-[120px]"
+            style={{ backgroundColor: theme.accentSoft, opacity: resolvedTheme === "light" ? 0.14 : 0.36 }}
+          />
+          <div
+            className="absolute right-[16%] bottom-[18%] h-[18rem] w-[18rem] rounded-full blur-[110px]"
+            style={{
+              backgroundColor: resolvedTheme === "light" ? "rgba(138,99,255,0.14)" : "rgba(133,212,255,0.12)",
+              opacity: resolvedTheme === "light" ? 0.18 : 0.4,
+            }}
+          />
+        </div>
+
+        <div className="relative z-10">
+          <div className="grid gap-10 xl:grid-cols-[minmax(0,1.1fr)_auto] xl:items-start">
+            <div className="max-w-4xl">
+              <div
+                className="inline-flex items-center rounded-full border px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.24em]"
+                style={{
+                  borderColor: theme.border,
+                  backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.46)" : "rgba(10,12,18,0.46)",
+                  color: theme.softText,
+                  backdropFilter: "blur(14px)",
+                }}
+              >
+                {t.engineeringEyebrow}
+              </div>
+
+              <h2 className="font-display mt-5 max-w-[11ch] text-[2rem] font-bold leading-[1.01] sm:text-[2.35rem] lg:text-[3rem]">
+                {t.engineeringTitle}
+              </h2>
+
+              <div className="mt-7 grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start">
+                <p
+                  className="max-w-3xl text-[0.98rem] leading-7 sm:text-[1.04rem] lg:text-[1.08rem] lg:leading-8"
+                  style={{ color: theme.mutedText }}
+                >
+                  {t.engineeringDescription}
+                </p>
+
+                <div
+                  className="inline-flex items-center gap-3 rounded-full border px-4 py-3 text-[0.72rem] uppercase tracking-[0.2em]"
+                  style={{
+                    borderColor: theme.border,
+                    backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.44)" : "rgba(10,12,18,0.42)",
+                    color: theme.softText,
+                    backdropFilter: "blur(14px)",
+                  }}
+                >
+                  <span
+                    className="h-2.5 w-2.5 rounded-full"
+                    style={{
+                      backgroundColor: theme.accent,
+                      boxShadow: `0 0 0 6px ${theme.accentSoft}`,
+                    }}
+                  />
+                  Operational-grade systems
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="hidden xl:block max-w-[18rem] justify-self-end rounded-[1.55rem] border px-5 py-5"
+              style={{
+                borderColor: resolvedTheme === "light" ? "rgba(31,28,44,0.1)" : "rgba(255,255,255,0.08)",
+                backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.42)" : "rgba(6,9,18,0.28)",
+                backdropFilter: "blur(14px)",
+              }}
+            >
+              <div
+                className="text-[0.68rem] font-medium uppercase tracking-[0.24em]"
+                style={{ color: resolvedTheme === "light" ? "rgba(34,28,52,0.68)" : "rgba(236,229,255,0.72)" }}
+              >
+                {t.engineeringEyebrow}
+              </div>
+              <p className="mt-3 text-[1rem] leading-7 sm:text-[1.04rem]" style={{ color: resolvedTheme === "light" ? "#211c2e" : "#f5f2ff" }}>
+                {t.engineeringVisualTitle}
+              </p>
+              <div
+                className="mt-5 text-[0.78rem] uppercase tracking-[0.2em]"
+                style={{ color: theme.softText }}
+              >
+                {t.engineeringVisualCaption}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12">
+            <div
+              className="mb-8 h-px w-full"
+              style={{
+                background: `linear-gradient(90deg, ${theme.accent} 0%, ${theme.accentSoft} 30%, transparent 72%)`,
+                opacity: 0.6,
+              }}
+            />
+
+            <div className="grid gap-5 sm:grid-cols-2">
+              {t.engineeringPillars.map((pillar, index) => (
+                <div
+                  key={pillar.title}
+                  className="group relative overflow-hidden rounded-[1.65rem] p-5 transition-all duration-300 lg:p-6"
+                  style={{
+                    backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.18)" : "rgba(14,16,22,0.34)",
+                    boxShadow: resolvedTheme === "light" ? "inset 0 0 0 1px rgba(31,28,44,0.08)" : `inset 0 0 0 1px rgba(255,255,255,0.08)`,
+                    transform: index % 2 === 1 ? "translateY(1.1rem)" : "none",
+                    backdropFilter: resolvedTheme === "light" ? "blur(3px)" : "blur(6px)",
+                  }}
+                >
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        resolvedTheme === "light"
+                          ? "linear-gradient(180deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.03) 100%)"
+                          : `linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0) 100%)`,
+                    }}
+                  />
+                  <div
+                    className="absolute left-0 top-0 h-full w-px"
+                    style={{
+                      background: `linear-gradient(180deg, ${theme.accent} 0%, ${theme.accentSoft} 100%)`,
+                      opacity: 0.72,
+                    }}
+                  />
+
+                  <div className="relative z-10">
+                    <div className="flex items-start justify-between gap-4">
+                      <div
+                        className="flex h-10 w-10 items-center justify-center rounded-full border text-[0.72rem] font-semibold uppercase tracking-[0.2em]"
+                        style={{
+                          borderColor: resolvedTheme === "light" ? "rgba(31,28,44,0.1)" : "rgba(255,255,255,0.1)",
+                          backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.16)" : "rgba(255,255,255,0.03)",
+                          color: theme.accent,
+                        }}
+                      >
+                        0{index + 1}
+                      </div>
+
+                      <div
+                        className="h-2.5 w-2.5 rounded-full"
+                        style={{
+                          backgroundColor: theme.accent,
+                          boxShadow: `0 0 0 6px ${theme.accentSoft}`,
+                        }}
+                      />
+                    </div>
+
+                    <h3 className="font-display mt-6 max-w-[14ch] text-[1.12rem] font-semibold leading-[1.15] sm:text-[1.18rem] lg:text-[1.26rem]">
+                      {pillar.title}
+                    </h3>
+
+                    <p className="mt-4 max-w-[30ch] text-[0.93rem] leading-7 lg:text-[0.98rem]" style={{ color: theme.mutedText }}>
+                      {pillar.text}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </RevealBlock>
+
+      <RevealBlock
         variant="tilt-in"
         className={`${sectionShell} border-t`}
         style={{ borderColor: theme.border }}
@@ -1479,11 +2075,7 @@ export default function StudioPage() {
           <div>
             <div
               className="inline-flex items-center rounded-full border px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.24em]"
-              style={{
-                borderColor: theme.border,
-                backgroundColor: theme.panelStrong,
-                color: theme.softText,
-              }}
+              style={sectionEyebrowStyle}
             >
               {t.enterpriseReady}
             </div>
@@ -1505,18 +2097,11 @@ export default function StudioPage() {
             <div
               key={item.step}
               className="group relative overflow-hidden rounded-[2rem] border p-6 transition-all duration-300 lg:p-8"
-              style={{
-                borderColor: theme.border,
-                background: `linear-gradient(180deg, ${theme.panelStrong} 0%, ${theme.panel} 100%)`,
-                boxShadow: `0 24px 72px ${theme.accentSoft}`,
-              }}
+              style={panelShellStyle(theme.accentSoft)}
             >
               <div
                 className="absolute inset-x-0 top-0 h-px"
-                style={{
-                  background: `linear-gradient(90deg, transparent 0%, ${theme.accent} 50%, transparent 100%)`,
-                  opacity: 0.85,
-                }}
+                style={panelTopLineStyle}
               />
               <div
                 className="absolute -right-10 -top-6 h-36 w-36 rounded-full blur-3xl"
@@ -1546,11 +2131,7 @@ export default function StudioPage() {
                     </div>
                     <div
                       className="flex h-12 w-12 items-center justify-center rounded-2xl border"
-                    style={{
-                      borderColor: theme.border,
-                      backgroundColor: theme.panelStrong,
-                      color: theme.accent,
-                    }}
+                    style={iconTileStyle}
                   >
                     {index === 0 ? (
                       <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.7">
@@ -1574,10 +2155,7 @@ export default function StudioPage() {
                 </h3>
                 <div
                   className="mt-3 inline-flex items-center rounded-full px-3 py-1 text-[0.68rem] uppercase tracking-[0.22em]"
-                  style={{
-                    backgroundColor: theme.panelStrong,
-                    color: theme.softText,
-                  }}
+                  style={chipStyle}
                 >
                   {index === 0 ? t.coreCapabilities : index === 1 ? t.systemImpact : t.businessOutcomes}
                 </div>
@@ -1611,11 +2189,7 @@ export default function StudioPage() {
           <div>
             <div
               className="inline-flex items-center rounded-full border px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.24em]"
-              style={{
-                borderColor: theme.border,
-                backgroundColor: theme.panelStrong,
-                color: theme.softText,
-              }}
+              style={sectionEyebrowStyle}
             >
               {t.businessOutcomes}
             </div>
@@ -1636,19 +2210,12 @@ export default function StudioPage() {
           {t.outcomes.map((outcome, index) => (
             <div
               key={outcome}
-              className="group relative overflow-hidden rounded-[1.75rem] border p-5 transition-all duration-300 lg:p-6"
-              style={{
-                borderColor: theme.border,
-                background: `linear-gradient(180deg, ${theme.panelStrong} 0%, ${theme.panel} 100%)`,
-                boxShadow: `0 20px 64px ${theme.accentSoft}`,
-              }}
+              className="group relative overflow-hidden rounded-[2rem] border p-5 transition-all duration-300 lg:p-6"
+              style={panelShellStyle(theme.accentSoft)}
             >
               <div
                 className="absolute inset-x-0 top-0 h-px"
-                style={{
-                  background: `linear-gradient(90deg, transparent 0%, ${theme.accent} 50%, transparent 100%)`,
-                  opacity: 0.8,
-                }}
+                style={panelTopLineStyle}
               />
               <div
                 className="absolute -right-8 top-0 h-28 w-28 rounded-full blur-3xl"
@@ -1662,11 +2229,7 @@ export default function StudioPage() {
                 <div className="flex items-start justify-between gap-4">
                   <div
                     className="flex h-11 w-11 items-center justify-center rounded-2xl border"
-                    style={{
-                      borderColor: theme.border,
-                      backgroundColor: theme.panelStrong,
-                      color: theme.accent,
-                    }}
+                    style={iconTileStyle}
                   >
                     {index === 0 ? (
                       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -1793,19 +2356,12 @@ export default function StudioPage() {
               ref={contactFormRef}
               onSubmit={handleContactSubmit}
               className="rounded-[2rem] border p-6 lg:p-7"
-              style={{
-                borderColor: theme.border,
-                background: `linear-gradient(180deg, ${theme.panelStrong} 0%, ${theme.panel} 100%)`,
-                boxShadow: `0 24px 80px ${theme.accentSoft}`,
-              }}
+              style={panelShellStyle(theme.accentSoft)}
             >
               <div className="flex items-start justify-between gap-4">
                 <div
                   className="inline-flex items-center rounded-full px-3 py-1 text-[0.68rem] uppercase tracking-[0.22em]"
-                  style={{
-                    backgroundColor: theme.panelStrong,
-                    color: theme.softText,
-                  }}
+                  style={chipStyle}
                 >
                   {contactUi.title}
                 </div>
@@ -1847,11 +2403,7 @@ export default function StudioPage() {
                     onChange={handleContactFieldChange("name")}
                     required
                     className="rounded-2xl border px-4 py-3 text-[0.96rem] outline-none transition"
-                    style={{
-                      borderColor: theme.border,
-                      backgroundColor: theme.panel,
-                      color: theme.text,
-                    }}
+                    style={inputSurfaceStyle}
                   />
                 </label>
 
@@ -1863,11 +2415,7 @@ export default function StudioPage() {
                     onChange={handleContactFieldChange("email")}
                     required
                     className="rounded-2xl border px-4 py-3 text-[0.96rem] outline-none transition"
-                    style={{
-                      borderColor: theme.border,
-                      backgroundColor: theme.panel,
-                      color: theme.text,
-                    }}
+                    style={inputSurfaceStyle}
                   />
                 </label>
               </div>
@@ -1879,11 +2427,7 @@ export default function StudioPage() {
                   value={contactForm.company}
                   onChange={handleContactFieldChange("company")}
                   className="rounded-2xl border px-4 py-3 text-[0.96rem] outline-none transition"
-                  style={{
-                    borderColor: theme.border,
-                    backgroundColor: theme.panel,
-                    color: theme.text,
-                  }}
+                  style={inputSurfaceStyle}
                 />
               </label>
 
@@ -1900,9 +2444,7 @@ export default function StudioPage() {
                     minHeight: "10rem",
                     overflowY: "hidden",
                     scrollbarWidth: "none",
-                    borderColor: theme.border,
-                    backgroundColor: theme.panel,
-                    color: theme.text,
+                    ...inputSurfaceStyle,
                   }}
                 />
               </label>
@@ -1924,10 +2466,7 @@ export default function StudioPage() {
 
               <div
                 className="mt-4 rounded-[1.5rem] border p-4"
-                style={{
-                  borderColor: theme.border,
-                  backgroundColor: theme.panelStrong,
-                }}
+                style={panelShellStyle("rgba(0,0,0,0.08)")}
               >
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div className="flex-1">
@@ -1973,11 +2512,7 @@ export default function StudioPage() {
                     required
                     placeholder={contactUi.captchaPlaceholder}
                     className="rounded-2xl border px-4 py-3 text-[0.96rem] outline-none transition"
-                    style={{
-                      borderColor: theme.border,
-                      backgroundColor: theme.panel,
-                      color: theme.text,
-                    }}
+                    style={inputSurfaceStyle}
                   />
                 </label>
               </div>
@@ -2045,10 +2580,7 @@ export default function StudioPage() {
             >
               <div
                 className="inline-flex items-center rounded-full px-3 py-1 text-[0.68rem] uppercase tracking-[0.22em]"
-                style={{
-                  backgroundColor: theme.panelStrong,
-                  color: theme.softText,
-                }}
+                style={chipStyle}
               >
                 {contactUi.title}
               </div>
