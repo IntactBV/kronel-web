@@ -35,7 +35,7 @@ const CONTACT_FORM_COPY = {
     title: "Send a project brief",
     description: "Share the basics and the message will be stored locally in your studio inbox.",
     teaserTitle: "Ready to describe the system you need?",
-    teaserText: "Open a short brief form and leave the core details. Your message will be saved locally so you can review every inquiry later from the studio inbox.",
+    teaserText: "Open a short brief form and leave the core details. Your message will be sent to the Kronel team, reviewed carefully, and followed up with a solution shaped around your needs.",
     open: "Open form",
     cancel: "Cancel",
     name: "Name",
@@ -53,6 +53,98 @@ const CONTACT_FORM_COPY = {
     success: "Your email has been sent. We will review your brief and get back to you.",
     error: "Something went wrong while saving the message.",
     inbox: "Open inbox",
+  },
+  de: {
+    title: "Projektbrief senden",
+    description: "Teilen Sie die wichtigsten Angaben. Die Nachricht wird lokal in Ihrem Studio-Posteingang gespeichert.",
+    teaserTitle: "Bereit, das System zu beschreiben, das Sie brauchen?",
+    teaserText: "Öffnen Sie ein kurzes Briefing-Formular und hinterlassen Sie die wichtigsten Details. Ihre Nachricht wird an das Kronel-Team gesendet, sorgfältig analysiert und mit einer Lösung beantwortet, die auf Ihre Anforderungen abgestimmt ist.",
+    open: "Formular öffnen",
+    cancel: "Abbrechen",
+    name: "Name",
+    email: "E-Mail",
+    company: "Unternehmen",
+    message: "Nachricht",
+    captcha: "Captcha",
+    captchaPlaceholder: "Ergebnis eingeben",
+    captchaLoading: "Prüfung wird geladen...",
+    captchaRefresh: "Prüfung aktualisieren",
+    captchaError: "Die Captcha-Prüfung kann im Moment nicht geladen werden.",
+    captchaHint: "Diese kurze Prüfung hilft, automatisierten Spam zu blockieren.",
+    submit: "Nachricht senden",
+    sending: "E-Mail wird gesendet...",
+    success: "Ihre E-Mail wurde gesendet. Wir prüfen Ihr Briefing und melden uns bei Ihnen.",
+    error: "Beim Speichern der Nachricht ist etwas schiefgelaufen.",
+    inbox: "Posteingang öffnen",
+  },
+  fr: {
+    title: "Envoyer un brief projet",
+    description: "Partagez les informations essentielles. Le message sera enregistré localement dans votre boîte de réception studio.",
+    teaserTitle: "Prêt à décrire le système dont vous avez besoin ?",
+    teaserText: "Ouvrez un court formulaire de brief et laissez les détails clés. Votre message sera transmis à l'équipe Kronel, analysé avec attention, puis suivi d'une solution adaptée à vos besoins.",
+    open: "Ouvrir le formulaire",
+    cancel: "Annuler",
+    name: "Nom",
+    email: "E-mail",
+    company: "Entreprise",
+    message: "Message",
+    captcha: "Captcha",
+    captchaPlaceholder: "Saisir le résultat",
+    captchaLoading: "Chargement du défi...",
+    captchaRefresh: "Actualiser le défi",
+    captchaError: "Impossible de charger le défi captcha pour le moment.",
+    captchaHint: "Cette vérification rapide aide à bloquer le spam automatisé.",
+    submit: "Envoyer le message",
+    sending: "Envoi de l'e-mail...",
+    success: "Votre e-mail a été envoyé. Nous étudierons votre brief et reviendrons vers vous.",
+    error: "Une erreur est survenue lors de l'enregistrement du message.",
+    inbox: "Ouvrir la boîte de réception",
+  },
+  el: {
+    title: "Στείλτε brief έργου",
+    description: "Μοιραστείτε τα βασικά στοιχεία. Το μήνυμα θα αποθηκευτεί τοπικά στο studio inbox σας.",
+    teaserTitle: "Έτοιμοι να περιγράψετε το σύστημα που χρειάζεστε;",
+    teaserText: "Ανοίξτε μια σύντομη φόρμα brief και αφήστε τις βασικές λεπτομέρειες. Το μήνυμά σας θα σταλεί στην ομάδα Kronel, θα αναλυθεί προσεκτικά και θα ακολουθήσει πρόταση λύσης προσαρμοσμένη στις ανάγκες σας.",
+    open: "Άνοιγμα φόρμας",
+    cancel: "Ακύρωση",
+    name: "Όνομα",
+    email: "Email",
+    company: "Εταιρεία",
+    message: "Μήνυμα",
+    captcha: "Captcha",
+    captchaPlaceholder: "Εισάγετε το αποτέλεσμα",
+    captchaLoading: "Φόρτωση ελέγχου...",
+    captchaRefresh: "Ανανέωση ελέγχου",
+    captchaError: "Δεν είναι δυνατή η φόρτωση του captcha αυτή τη στιγμή.",
+    captchaHint: "Αυτός ο σύντομος έλεγχος βοηθά στον αποκλεισμό αυτοματοποιημένου spam.",
+    submit: "Αποστολή μηνύματος",
+    sending: "Αποστολή email...",
+    success: "Το email σας στάλθηκε. Θα εξετάσουμε το brief σας και θα επικοινωνήσουμε μαζί σας.",
+    error: "Κάτι πήγε στραβά κατά την αποθήκευση του μηνύματος.",
+    inbox: "Άνοιγμα inbox",
+  },
+  ro: {
+    title: "Trimite un brief de proiect",
+    description: "Trimite detaliile esențiale, iar mesajul va fi salvat local în inbox-ul studio.",
+    teaserTitle: "Ești gata să descrii sistemul de care ai nevoie?",
+    teaserText: "Deschide un formular scurt de brief și lasă detaliile principale. Mesajul tău va ajunge la echipa Kronel, va fi analizat cu atenție, iar noi vom reveni cu o soluție potrivită nevoilor tale.",
+    open: "Deschide formularul",
+    cancel: "Anulează",
+    name: "Nume",
+    email: "Email",
+    company: "Companie",
+    message: "Mesaj",
+    captcha: "Captcha",
+    captchaPlaceholder: "Introdu rezultatul",
+    captchaLoading: "Se încarcă verificarea...",
+    captchaRefresh: "Reîmprospătează verificarea",
+    captchaError: "Verificarea captcha nu poate fi încărcată momentan.",
+    captchaHint: "Această verificare rapidă ajută la blocarea spamului automat.",
+    submit: "Trimite mesajul",
+    sending: "Se trimite emailul...",
+    success: "Emailul tău a fost trimis. Vom analiza brief-ul și revenim către tine.",
+    error: "Ceva nu a funcționat la salvarea mesajului.",
+    inbox: "Deschide inbox-ul",
   },
 };
 
@@ -77,6 +169,19 @@ const translations = {
       "Our delivery approach is built around platforms that stay responsive under pressure, keep data structured and reliable, scale without operational drag, and support intelligent automation shaped around how your business actually works.",
     engineeringVisualTitle: "Precision infrastructure, adaptable flow.",
     engineeringVisualCaption: "Performance, continuity, and automation designed around the way the business moves.",
+    mobileEyebrow: "Mobile applications",
+    mobileTitle: "Any mobile application your business needs to perform faster.",
+    mobileDescription:
+      "We design and build custom mobile applications around the workflows, data, roles, and decisions that actually move your business. From field operations and client portals to internal productivity tools, every app is built to reduce friction, accelerate execution, and give teams the right capability wherever work happens.",
+    mobileVisualTitle: "Business capability, engineered for the device in your team's hand.",
+    mobileVisualCaption: "Native-feeling mobile systems connected to the operation behind them.",
+    websiteEyebrow: "Websites and web platforms",
+    websiteTitle: "Premium websites engineered to turn trust into action.",
+    websiteDescription:
+      "We create business websites, product pages, landing pages, and client-facing web experiences that do more than look polished. Every site is shaped around clarity, performance, conversion, SEO structure, analytics, and the integrations needed to turn interest into measurable business movement.",
+    websiteVisualTitle: "A website should behave like a business asset, not a static brochure.",
+    websiteVisualCaption: "Presentation, performance, conversion, and data flow connected into one web experience.",
+    websiteFormats: "Websites • Landing pages • Portals",
     bookCall: "Book a call",
     learnMore: "Learn more",
     systemImpact: "System Impact",
@@ -166,6 +271,34 @@ const translations = {
         text: "Automated and intelligent workflows are shaped around the business model instead of forcing the business to adapt to the tool.",
       },
     ],
+    mobileCapabilities: [
+      {
+        title: "Built around the workflow",
+        text: "Every screen, action, and notification is shaped around the job your users need to complete.",
+      },
+      {
+        title: "Connected to core systems",
+        text: "Mobile experiences can integrate with CRMs, ERPs, APIs, dashboards, and operational data.",
+      },
+      {
+        title: "Performance in the field",
+        text: "Fast, resilient interfaces keep teams productive when work happens away from a desk.",
+      },
+    ],
+    websiteCapabilities: [
+      {
+        title: "Built for credibility",
+        text: "Clear messaging, refined UX, and premium visual structure help visitors understand why your company is worth trusting.",
+      },
+      {
+        title: "Built for conversion",
+        text: "Every page can guide interested visitors toward clear actions, so inquiries become easier to track and turn into real opportunities.",
+      },
+      {
+        title: "Built to perform",
+        text: "Fast loading, responsive layouts, SEO structure, and reliable foundations keep the site useful as traffic grows.",
+      },
+    ],
   },
   de: {
     brand: "KRONEL STUDIO",
@@ -187,6 +320,19 @@ const translations = {
       "Unser Ansatz zielt auf Plattformen, die auch unter Last schnell bleiben, Daten sauber und verlässlich halten, ohne operative Reibung skalieren und intelligente Automatisierung entlang Ihrer realen Abläufe ermöglichen.",
     engineeringVisualTitle: "Präzise Infrastruktur, anpassungsfähiger Fluss.",
     engineeringVisualCaption: "Performance, Kontinuität und Automatisierung entlang echter Geschäftsbewegung.",
+    mobileEyebrow: "Mobile Anwendungen",
+    mobileTitle: "Jede mobile Anwendung, die Ihr Unternehmen für mehr Leistung braucht.",
+    mobileDescription:
+      "Wir entwickeln maßgeschneiderte mobile Anwendungen rund um die Abläufe, Daten, Rollen und Entscheidungen, die Ihr Unternehmen wirklich bewegen. Von Außendienstprozessen und Kundenportalen bis zu internen Produktivitätstools wird jede App darauf ausgelegt, Reibung zu reduzieren, Ausführung zu beschleunigen und Teams dort handlungsfähig zu machen, wo Arbeit passiert.",
+    mobileVisualTitle: "Business-Fähigkeit, entwickelt für das Gerät in der Hand Ihres Teams.",
+    mobileVisualCaption: "Mobile Systeme mit nativem Nutzungserlebnis, verbunden mit dem operativen Kern.",
+    websiteEyebrow: "Websites und Webplattformen",
+    websiteTitle: "Premium-Websites, entwickelt um Vertrauen in Handlung zu verwandeln.",
+    websiteDescription:
+      "Wir erstellen Unternehmenswebsites, Produktseiten, Landingpages und kundenseitige Web-Erlebnisse, die mehr leisten als nur gut auszusehen. Jede Website wird auf Klarheit, Performance, Conversion, SEO-Struktur, Analytics und die Integrationen ausgerichtet, die Interesse in messbare Geschäftsbewegung verwandeln.",
+    websiteVisualTitle: "Eine Website sollte wie ein Business-Asset funktionieren, nicht wie eine statische Broschüre.",
+    websiteVisualCaption: "Präsentation, Performance, Conversion und Datenfluss verbunden in einem Web-Erlebnis.",
+    websiteFormats: "Websites • Landingpages • Portale",
     bookCall: "Gespräch buchen",
     learnMore: "Mehr erfahren",
     systemImpact: "Systemwirkung",
@@ -276,6 +422,34 @@ const translations = {
         text: "Automatisierte und intelligente Abläufe orientieren sich am Geschäftsmodell statt das Unternehmen an das Werkzeug zu zwingen.",
       },
     ],
+    mobileCapabilities: [
+      {
+        title: "Um den Workflow gebaut",
+        text: "Jeder Screen, jede Aktion und jede Benachrichtigung folgt der Aufgabe, die Nutzer wirklich erledigen müssen.",
+      },
+      {
+        title: "Mit Kernsystemen verbunden",
+        text: "Mobile Erlebnisse können mit CRMs, ERPs, APIs, Dashboards und operativen Daten integriert werden.",
+      },
+      {
+        title: "Leistung im Einsatz",
+        text: "Schnelle, stabile Oberflächen halten Teams produktiv, wenn Arbeit nicht am Schreibtisch stattfindet.",
+      },
+    ],
+    websiteCapabilities: [
+      {
+        title: "Für Glaubwürdigkeit gebaut",
+        text: "Klare Botschaften, durchdachte UX und eine hochwertige visuelle Struktur helfen Besuchern zu verstehen, warum Ihr Unternehmen Vertrauen verdient.",
+      },
+      {
+        title: "Für Conversion gebaut",
+        text: "Jede Seite kann interessierte Besucher zu klaren Aktionen führen, damit Anfragen leichter nachvollziehbar werden und echte Chancen entstehen.",
+      },
+      {
+        title: "Für Performance gebaut",
+        text: "Schnelle Ladezeiten, responsive Layouts, SEO-Struktur und stabile Grundlagen halten die Website auch bei wachsendem Traffic nutzbar.",
+      },
+    ],
   },
   fr: {
     brand: "KRONEL STUDIO",
@@ -297,6 +471,19 @@ const translations = {
       "Notre approche privilégie des plateformes qui restent réactives sous pression, gardent des données structurées et fiables, montent en charge sans friction opérationnelle et soutiennent une automatisation intelligente alignée sur votre réalité métier.",
     engineeringVisualTitle: "Infrastructure précise, flux adaptable.",
     engineeringVisualCaption: "Performance, continuité et automatisation conçues autour du mouvement réel de l'entreprise.",
+    mobileEyebrow: "Applications mobiles",
+    mobileTitle: "Toute application mobile dont votre entreprise a besoin pour gagner en performance.",
+    mobileDescription:
+      "Nous concevons et développons des applications mobiles sur mesure autour des workflows, des données, des rôles et des décisions qui font réellement avancer votre activité. Des opérations terrain aux portails clients en passant par les outils internes de productivité, chaque application est pensée pour réduire la friction, accélérer l'exécution et donner aux équipes la bonne capacité là où le travail se fait.",
+    mobileVisualTitle: "Une capacité métier, conçue pour l'appareil que vos équipes ont en main.",
+    mobileVisualCaption: "Des systèmes mobiles fluides, connectés au fonctionnement opérationnel.",
+    websiteEyebrow: "Sites web et plateformes web",
+    websiteTitle: "Des sites premium conçus pour transformer la confiance en action.",
+    websiteDescription:
+      "Nous créons des sites d'entreprise, pages produit, landing pages et expériences web client qui ne se contentent pas d'être élégants. Chaque site est pensé autour de la clarté, de la performance, de la conversion, de la structure SEO, de l'analytics et des intégrations nécessaires pour transformer l'intérêt en mouvement business mesurable.",
+    websiteVisualTitle: "Un site web doit fonctionner comme un actif business, pas comme une brochure statique.",
+    websiteVisualCaption: "Présentation, performance, conversion et flux de données réunis dans une seule expérience web.",
+    websiteFormats: "Sites web • Landing pages • Portails",
     bookCall: "Réserver un appel",
     learnMore: "En savoir plus",
     systemImpact: "Impact du système",
@@ -386,6 +573,34 @@ const translations = {
         text: "Les workflows automatisés et intelligents s'adaptent au métier au lieu d'obliger le métier à s'adapter à l'outil.",
       },
     ],
+    mobileCapabilities: [
+      {
+        title: "Construit autour du workflow",
+        text: "Chaque écran, action et notification suit la tâche que les utilisateurs doivent réellement accomplir.",
+      },
+      {
+        title: "Connecté aux systèmes clés",
+        text: "Les expériences mobiles peuvent s'intégrer aux CRM, ERP, API, tableaux de bord et données opérationnelles.",
+      },
+      {
+        title: "Performance sur le terrain",
+        text: "Des interfaces rapides et résilientes maintiennent la productivité lorsque le travail se fait loin du bureau.",
+      },
+    ],
+    websiteCapabilities: [
+      {
+        title: "Conçu pour la crédibilité",
+        text: "Des messages clairs, une UX soignée et une structure visuelle premium aident les visiteurs à comprendre pourquoi votre entreprise mérite leur confiance.",
+      },
+      {
+        title: "Conçu pour la conversion",
+        text: "Chaque page peut guider les visiteurs intéressés vers des actions claires, pour rendre les demandes plus faciles à suivre et les transformer en vraies opportunités.",
+      },
+      {
+        title: "Conçu pour performer",
+        text: "Chargement rapide, layouts responsives, structure SEO et bases fiables gardent le site utile quand le trafic augmente.",
+      },
+    ],
   },
   el: {
     brand: "KRONEL STUDIO",
@@ -407,6 +622,19 @@ const translations = {
       "Η προσέγγισή μας δίνει πλατφόρμες που παραμένουν γρήγορες υπό πίεση, κρατούν τα δεδομένα δομημένα και αξιόπιστα, κλιμακώνονται χωρίς λειτουργική τριβή και υποστηρίζουν έξυπνους αυτοματισμούς προσαρμοσμένους στον πραγματικό τρόπο λειτουργίας της επιχείρησης.",
     engineeringVisualTitle: "Ακριβής υποδομή, προσαρμόσιμη ροή.",
     engineeringVisualCaption: "Απόδοση, συνέχεια και αυτοματοποίηση σχεδιασμένες γύρω από την πραγματική κίνηση της επιχείρησης.",
+    mobileEyebrow: "Mobile εφαρμογές",
+    mobileTitle: "Κάθε mobile εφαρμογή που χρειάζεται η επιχείρησή σας για υψηλότερη απόδοση.",
+    mobileDescription:
+      "Σχεδιάζουμε και αναπτύσσουμε προσαρμοσμένες mobile εφαρμογές γύρω από τις ροές εργασίας, τα δεδομένα, τους ρόλους και τις αποφάσεις που κινούν πραγματικά την επιχείρηση. Από λειτουργίες πεδίου και portals πελατών μέχρι εσωτερικά εργαλεία παραγωγικότητας, κάθε εφαρμογή μειώνει την τριβή, επιταχύνει την εκτέλεση και δίνει στις ομάδες τη σωστή δυνατότητα εκεί όπου γίνεται η δουλειά.",
+    mobileVisualTitle: "Επιχειρησιακή δυνατότητα, σχεδιασμένη για τη συσκευή που κρατά η ομάδα σας.",
+    mobileVisualCaption: "Mobile συστήματα με φυσική εμπειρία χρήσης, συνδεδεμένα με τον λειτουργικό πυρήνα.",
+    websiteEyebrow: "Websites και web πλατφόρμες",
+    websiteTitle: "Premium websites σχεδιασμένα να μετατρέπουν την εμπιστοσύνη σε δράση.",
+    websiteDescription:
+      "Δημιουργούμε εταιρικά websites, σελίδες προϊόντων, landing pages και web εμπειρίες για πελάτες που κάνουν περισσότερα από το να δείχνουν προσεγμένα. Κάθε site σχεδιάζεται γύρω από καθαρότητα, απόδοση, conversion, SEO δομή, analytics και τις ενσωματώσεις που μετατρέπουν το ενδιαφέρον σε μετρήσιμη επιχειρησιακή κίνηση.",
+    websiteVisualTitle: "Ένα website πρέπει να λειτουργεί ως επιχειρησιακό asset, όχι ως στατική μπροσούρα.",
+    websiteVisualCaption: "Παρουσίαση, απόδοση, conversion και ροή δεδομένων ενωμένα σε μία web εμπειρία.",
+    websiteFormats: "Websites • Landing pages • Portals",
     bookCall: "Κλείστε κλήση",
     learnMore: "Μάθετε περισσότερα",
     systemImpact: "Επίδραση συστήματος",
@@ -496,6 +724,34 @@ const translations = {
         text: "Οι αυτοματοποιημένες και έξυπνες ροές προσαρμόζονται στο επιχειρησιακό μοντέλο αντί να το αναγκάζουν να προσαρμοστεί στο εργαλείο.",
       },
     ],
+    mobileCapabilities: [
+      {
+        title: "Χτισμένο γύρω από τη ροή εργασίας",
+        text: "Κάθε οθόνη, ενέργεια και ειδοποίηση ακολουθεί τη δουλειά που οι χρήστες πρέπει πραγματικά να ολοκληρώσουν.",
+      },
+      {
+        title: "Σύνδεση με βασικά συστήματα",
+        text: "Οι mobile εμπειρίες μπορούν να ενσωματωθούν με CRM, ERP, API, dashboards και επιχειρησιακά δεδομένα.",
+      },
+      {
+        title: "Απόδοση στο πεδίο",
+        text: "Γρήγορα και ανθεκτικά interfaces κρατούν τις ομάδες παραγωγικές όταν η εργασία γίνεται μακριά από το γραφείο.",
+      },
+    ],
+    websiteCapabilities: [
+      {
+        title: "Χτισμένο για αξιοπιστία",
+        text: "Καθαρά μηνύματα, προσεγμένο UX και premium οπτική δομή βοηθούν τους επισκέπτες να καταλάβουν γιατί η εταιρεία σας αξίζει εμπιστοσύνη.",
+      },
+      {
+        title: "Χτισμένο για conversion",
+        text: "Κάθε σελίδα μπορεί να οδηγεί τους ενδιαφερόμενους επισκέπτες σε καθαρές ενέργειες, ώστε τα αιτήματα να παρακολουθούνται πιο εύκολα και να γίνονται πραγματικές ευκαιρίες.",
+      },
+      {
+        title: "Χτισμένο για απόδοση",
+        text: "Γρήγορη φόρτωση, responsive layouts, SEO δομή και αξιόπιστα θεμέλια κρατούν το site χρήσιμο όσο αυξάνεται η επισκεψιμότητα.",
+      },
+    ],
   },
   ro: {
     brand: "KRONEL STUDIO",
@@ -517,6 +773,19 @@ const translations = {
       "Abordarea noastră urmărește platforme care rămân rapide sub presiune, păstrează datele structurate și de încredere, scalează fără fricțiune operațională și susțin automatizări inteligente modelate după felul real în care funcționează compania.",
     engineeringVisualTitle: "Infrastructură precisă, flux adaptabil.",
     engineeringVisualCaption: "Performanță, continuitate și automatizare gândite în jurul mișcării reale a business-ului.",
+    mobileEyebrow: "Aplicații mobile",
+    mobileTitle: "Orice aplicație mobilă de care compania ta are nevoie pentru performanță mai mare.",
+    mobileDescription:
+      "Proiectăm și dezvoltăm aplicații mobile custom în jurul fluxurilor, datelor, rolurilor și deciziilor care mișcă efectiv business-ul. De la operațiuni pe teren și portaluri pentru clienți până la instrumente interne de productivitate, fiecare aplicație este construită să reducă fricțiunea, să accelereze execuția și să ofere echipelor capabilitatea potrivită oriunde se desfășoară munca.",
+    mobileVisualTitle: "Capabilitate de business, proiectată pentru dispozitivul din mâna echipei tale.",
+    mobileVisualCaption: "Sisteme mobile cu experiență naturală, conectate la operațiunea din spate.",
+    websiteEyebrow: "Website-uri și platforme web",
+    websiteTitle: "Website-uri premium proiectate să transforme încrederea în acțiune.",
+    websiteDescription:
+      "Creăm website-uri de prezentare, pagini de produs, landing pages și experiențe web pentru clienți care fac mai mult decât să arate bine. Fiecare site este gândit pentru claritate, performanță, conversie, structură SEO, analytics și integrările necesare ca interesul să devină mișcare de business măsurabilă.",
+    websiteVisualTitle: "Un website ar trebui să funcționeze ca un activ de business, nu ca o broșură statică.",
+    websiteVisualCaption: "Prezentare, performanță, conversie și flux de date conectate într-o singură experiență web.",
+    websiteFormats: "Website-uri • Landing pages • Portaluri",
     bookCall: "Programează un call",
     learnMore: "Află mai mult",
     systemImpact: "Impactul sistemului",
@@ -604,6 +873,34 @@ const translations = {
       {
         title: "Automatizare potrivită realității",
         text: "Fluxurile automate și inteligente sunt modelate după business, nu după constrângerile unui tool.",
+      },
+    ],
+    mobileCapabilities: [
+      {
+        title: "Construită în jurul fluxului",
+        text: "Fiecare ecran, acțiune și notificare urmează sarcina pe care utilizatorii trebuie să o ducă la capăt.",
+      },
+      {
+        title: "Conectată la sisteme esențiale",
+        text: "Experiențele mobile se pot integra cu CRM-uri, ERP-uri, API-uri, dashboard-uri și date operaționale.",
+      },
+      {
+        title: "Performanță în teren",
+        text: "Interfețele rapide și reziliente mențin echipele productive când munca se întâmplă departe de birou.",
+      },
+    ],
+    websiteCapabilities: [
+      {
+        title: "Construit pentru credibilitate",
+        text: "Mesajele clare, UX-ul rafinat și structura vizuală premium îi ajută pe vizitatori să înțeleagă de ce compania ta merită încredere.",
+      },
+      {
+        title: "Construit pentru conversie",
+        text: "Fiecare pagină poate ghida vizitatorii interesați către acțiuni clare, astfel încât cererile să fie mai ușor de urmărit și să devină oportunități reale.",
+      },
+      {
+        title: "Construit pentru performanță",
+        text: "Încărcarea rapidă, layout-urile responsive, structura SEO și fundația stabilă păstrează site-ul util pe măsură ce traficul crește.",
       },
     ],
   },
@@ -1226,10 +1523,12 @@ export default function StudioPage() {
     }
   };
 
-  const sectionShell = "w-full px-[clamp(1.25rem,4vw,6rem)] py-20 sm:py-22 lg:py-24 xl:px-[clamp(3rem,5vw,7.5rem)] xl:py-28 2xl:px-[clamp(4rem,6vw,10rem)]";
+  const sectionShell = "w-full px-[clamp(1.25rem,4vw,6rem)] py-22 sm:py-24 lg:py-26 xl:px-[clamp(3rem,5vw,7.5rem)] xl:py-30 2xl:px-[clamp(4rem,6vw,10rem)]";
   const brandLogoClass = "h-9 w-9 sm:h-10 sm:w-10 lg:h-[4.75rem] lg:w-[4.75rem] 2xl:h-[5.5rem] 2xl:w-[5.5rem]";
   const contactLogoClass = "h-10 w-10 sm:h-11 sm:w-11 lg:h-[5.25rem] lg:w-[5.25rem]";
   const footerLogoClass = "h-5 w-5 sm:h-6 sm:w-6 lg:h-[2.625rem] lg:w-[2.625rem]";
+  const sectionTitleClass = "font-display mt-4 max-w-[11ch] text-[1.95rem] font-bold leading-[1.03] sm:text-[2.2rem] lg:text-[2.7rem]";
+  const sectionIntroClass = "max-w-3xl text-[0.98rem] leading-7 sm:text-[1.03rem] lg:text-[1.08rem] lg:leading-8";
   const sectionEyebrowStyle = {
     borderColor: theme.border,
     backgroundColor: theme.panelStrong,
@@ -1651,12 +1950,12 @@ export default function StudioPage() {
               {t.visionEyebrow}
             </div>
 
-            <h2 className="font-display mt-5 max-w-[13ch] text-[2rem] font-bold leading-[1.02] sm:text-[2.25rem] lg:text-[2.9rem]">
+            <h2 className="font-display mt-4 max-w-[12ch] text-[1.95rem] font-bold leading-[1.03] sm:text-[2.2rem] lg:text-[2.8rem]">
               {t.visionTitle}
             </h2>
 
             <p
-              className="mt-6 max-w-3xl text-[0.98rem] leading-7 sm:text-[1.04rem] lg:text-[1.1rem] lg:leading-8"
+              className="mt-5 max-w-3xl text-[0.98rem] leading-7 sm:text-[1.03rem] lg:text-[1.08rem] lg:leading-8"
               style={{ color: theme.mutedText }}
             >
               {t.visionDescription}
@@ -1689,7 +1988,7 @@ export default function StudioPage() {
           </div>
         </div>
 
-        <div className="relative z-10 mt-12">
+        <div className="relative z-10 mt-14">
           <div
             className="mb-8 h-px w-full"
             style={{
@@ -1777,20 +2076,20 @@ export default function StudioPage() {
             >
               {t.systemImpact}
             </div>
-            <h2 className="font-display mt-5 text-[1.9rem] font-bold sm:text-[2.15rem] lg:text-[2.65rem]">
+            <h2 className={sectionTitleClass}>
               {t.coreCapabilities}
             </h2>
           </div>
 
           <p
-            className="max-w-3xl text-[0.95rem] leading-7 lg:ml-auto lg:text-[1.02rem] lg:leading-8"
+            className={`${sectionIntroClass} lg:ml-auto`}
             style={{ color: theme.mutedText }}
           >
             {t.heroDescription}
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 xl:grid-cols-2 2xl:grid-cols-[repeat(2,minmax(0,1fr))]">
+        <div className="mt-14 grid gap-6 xl:grid-cols-2 2xl:grid-cols-[repeat(2,minmax(0,1fr))]">
           {t.services.map((service, index) => (
             <div
               key={service.title}
@@ -1873,6 +2172,394 @@ export default function StudioPage() {
       </RevealBlock>
 
       <RevealBlock
+        variant="slide-up"
+        className={`relative overflow-hidden ${sectionShell} border-t`}
+        style={{ borderColor: theme.border }}
+      >
+        <div className="pointer-events-none absolute inset-0">
+          <Image
+            src={resolvedTheme === "light" ? "/images/studio/mobile-apps-abstract-light-v1.png" : "/images/studio/mobile-apps-abstract-v1.png"}
+            alt=""
+            fill
+            className={resolvedTheme === "light" ? "object-cover object-[70%_center] opacity-82" : "object-cover object-[72%_center] opacity-46"}
+            sizes="100vw"
+          />
+
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                resolvedTheme === "light"
+                  ? "linear-gradient(90deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.78) 34%, rgba(255,255,255,0.28) 62%, rgba(255,255,255,0.56) 100%)"
+                  : `linear-gradient(90deg, ${theme.page} 0%, rgba(5,5,8,0.84) 34%, rgba(5,5,8,0.44) 62%, ${theme.page} 100%)`,
+            }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                resolvedTheme === "light"
+                  ? "linear-gradient(180deg, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0.06) 18%, rgba(255,255,255,0.12) 82%, rgba(255,255,255,0.76) 100%)"
+                  : `linear-gradient(180deg, ${theme.page} 0%, transparent 18%, transparent 82%, ${theme.page} 100%)`,
+            }}
+          />
+          <div
+            className="absolute right-[18%] top-[10%] h-[24rem] w-[24rem] rounded-full blur-[130px]"
+            style={{ backgroundColor: theme.accentSoft, opacity: resolvedTheme === "light" ? 0.18 : 0.44 }}
+          />
+        </div>
+
+        <div className="relative z-10 grid gap-12 xl:grid-cols-[minmax(0,0.9fr)_minmax(28rem,0.72fr)] xl:items-start">
+          <div className="max-w-4xl">
+            <div
+              className="inline-flex items-center rounded-full border px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.24em]"
+              style={{
+                borderColor: theme.border,
+                backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.5)" : "rgba(10,12,18,0.46)",
+                color: theme.softText,
+                backdropFilter: "blur(14px)",
+              }}
+            >
+              {t.mobileEyebrow}
+            </div>
+
+            <h2 className="font-display mt-4 max-w-[12ch] text-[1.95rem] font-bold leading-[1.03] sm:text-[2.25rem] lg:text-[2.85rem]">
+              {t.mobileTitle}
+            </h2>
+
+            <p
+              className="mt-5 max-w-3xl text-[0.98rem] leading-7 sm:text-[1.03rem] lg:text-[1.08rem] lg:leading-8"
+              style={{ color: theme.mutedText }}
+            >
+              {t.mobileDescription}
+            </p>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-xl px-6 py-4 text-[0.95rem] font-semibold transition hover:translate-y-[-1px] lg:text-[1rem]"
+                style={{
+                  backgroundColor: theme.accent,
+                  color: theme.buttonText,
+                  boxShadow: `0 18px 60px ${theme.accentSoft}`,
+                }}
+              >
+                {t.bookCall}
+              </a>
+              <span className="text-[0.76rem] uppercase tracking-[0.2em]" style={{ color: theme.softText }}>
+                iOS • Android • Cross-platform
+              </span>
+            </div>
+          </div>
+
+          <div
+            className="rounded-[1.55rem] border px-5 py-5 xl:justify-self-end"
+            style={{
+              borderColor: resolvedTheme === "light" ? "rgba(31,28,44,0.1)" : "rgba(255,255,255,0.08)",
+              backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.46)" : "rgba(6,9,18,0.34)",
+              backdropFilter: "blur(14px)",
+            }}
+          >
+            <div
+              className="text-[0.68rem] font-medium uppercase tracking-[0.24em]"
+              style={{ color: resolvedTheme === "light" ? "rgba(34,28,52,0.68)" : "rgba(236,229,255,0.72)" }}
+            >
+              {t.mobileEyebrow}
+            </div>
+            <p className="mt-3 text-[1rem] leading-7 sm:text-[1.04rem]" style={{ color: resolvedTheme === "light" ? "#211c2e" : "#f5f2ff" }}>
+              {t.mobileVisualTitle}
+            </p>
+            <div
+              className="mt-5 text-[0.78rem] uppercase tracking-[0.2em]"
+              style={{ color: theme.softText }}
+            >
+              {t.mobileVisualCaption}
+            </div>
+          </div>
+        </div>
+
+        <div className="relative z-10 mt-14">
+          <div
+            className="mb-8 h-px w-full"
+            style={{
+              background: `linear-gradient(90deg, ${theme.accent} 0%, ${theme.accentSoft} 30%, transparent 72%)`,
+              opacity: 0.6,
+            }}
+          />
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {t.mobileCapabilities.map((capability, index) => (
+              <div
+                key={capability.title}
+                className="group relative overflow-hidden rounded-[1.65rem] p-5 transition-all duration-300 lg:p-6"
+                style={{
+                  backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.24)" : "rgba(14,16,22,0.38)",
+                  boxShadow: resolvedTheme === "light" ? "inset 0 0 0 1px rgba(31,28,44,0.08)" : "inset 0 0 0 1px rgba(255,255,255,0.08)",
+                  backdropFilter: resolvedTheme === "light" ? "blur(4px)" : "blur(7px)",
+                }}
+              >
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      resolvedTheme === "light"
+                        ? "linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.04) 100%)"
+                        : "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%)",
+                  }}
+                />
+                <div
+                  className="absolute left-0 top-0 h-full w-px"
+                  style={{
+                    background: `linear-gradient(180deg, ${theme.accent} 0%, ${theme.accentSoft} 100%)`,
+                    opacity: 0.72,
+                  }}
+                />
+
+                <div className="relative z-10">
+                  <div className="flex items-start justify-between gap-4">
+                    <div
+                      className="flex h-10 w-10 items-center justify-center rounded-full border text-[0.72rem] font-semibold uppercase tracking-[0.2em]"
+                      style={{
+                        borderColor: resolvedTheme === "light" ? "rgba(31,28,44,0.1)" : "rgba(255,255,255,0.1)",
+                        backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.22)" : "rgba(255,255,255,0.04)",
+                        color: theme.accent,
+                      }}
+                    >
+                      0{index + 1}
+                    </div>
+
+                    <div
+                      className="flex h-10 w-10 items-center justify-center rounded-2xl border"
+                      style={iconTileStyle}
+                    >
+                      {index === 0 ? (
+                        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <rect x="7" y="3.5" width="10" height="17" rx="2.5" />
+                          <path d="M10 7h4M10 16.5h4" />
+                        </svg>
+                      ) : index === 1 ? (
+                        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <path d="M6 8h12M6 16h12" />
+                          <circle cx="8" cy="8" r="2.5" />
+                          <circle cx="16" cy="16" r="2.5" />
+                        </svg>
+                      ) : (
+                        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <path d="M4 13h4l2.2-6 3.6 10 2.2-4H20" />
+                        </svg>
+                      )}
+                    </div>
+                  </div>
+
+                  <h3 className="font-display mt-6 max-w-[15ch] text-[1.12rem] font-semibold leading-[1.15] sm:text-[1.18rem] lg:text-[1.26rem]">
+                    {capability.title}
+                  </h3>
+
+                  <p className="mt-4 text-[0.93rem] leading-7 lg:text-[0.98rem]" style={{ color: theme.mutedText }}>
+                    {capability.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </RevealBlock>
+
+      <RevealBlock
+        variant="expand"
+        className={`relative overflow-hidden ${sectionShell} border-t`}
+        style={{ borderColor: theme.border }}
+      >
+        <div className="pointer-events-none absolute inset-0">
+          <Image
+            src={resolvedTheme === "light" ? "/images/studio/websites-abstract-light-v1.png" : "/images/studio/websites-abstract-v1.png"}
+            alt=""
+            fill
+            className={resolvedTheme === "light" ? "object-cover object-[72%_center] opacity-84" : "object-cover object-[72%_center] opacity-48"}
+            sizes="100vw"
+          />
+
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                resolvedTheme === "light"
+                  ? "linear-gradient(90deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.8) 34%, rgba(255,255,255,0.3) 62%, rgba(255,255,255,0.58) 100%)"
+                  : `linear-gradient(90deg, ${theme.page} 0%, rgba(5,5,8,0.86) 34%, rgba(5,5,8,0.46) 62%, ${theme.page} 100%)`,
+            }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                resolvedTheme === "light"
+                  ? "linear-gradient(180deg, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0.05) 18%, rgba(255,255,255,0.12) 82%, rgba(255,255,255,0.76) 100%)"
+                  : `linear-gradient(180deg, ${theme.page} 0%, transparent 18%, transparent 82%, ${theme.page} 100%)`,
+            }}
+          />
+          <div
+            className="absolute right-[14%] top-[14%] h-[24rem] w-[24rem] rounded-full blur-[130px]"
+            style={{ backgroundColor: theme.accentSoft, opacity: resolvedTheme === "light" ? 0.18 : 0.42 }}
+          />
+        </div>
+
+        <div className="relative z-10 grid gap-12 xl:grid-cols-[minmax(0,0.9fr)_minmax(28rem,0.72fr)] xl:items-start">
+          <div className="max-w-4xl">
+            <div
+              className="inline-flex items-center rounded-full border px-4 py-2 text-[0.68rem] font-medium uppercase tracking-[0.24em]"
+              style={{
+                borderColor: theme.border,
+                backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.5)" : "rgba(10,12,18,0.46)",
+                color: theme.softText,
+                backdropFilter: "blur(14px)",
+              }}
+            >
+              {t.websiteEyebrow}
+            </div>
+
+            <h2 className="font-display mt-4 max-w-[12ch] text-[1.95rem] font-bold leading-[1.03] sm:text-[2.25rem] lg:text-[2.85rem]">
+              {t.websiteTitle}
+            </h2>
+
+            <p
+              className="mt-5 max-w-3xl text-[0.98rem] leading-7 sm:text-[1.03rem] lg:text-[1.08rem] lg:leading-8"
+              style={{ color: theme.mutedText }}
+            >
+              {t.websiteDescription}
+            </p>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-xl px-6 py-4 text-[0.95rem] font-semibold transition hover:translate-y-[-1px] lg:text-[1rem]"
+                style={{
+                  backgroundColor: theme.accent,
+                  color: theme.buttonText,
+                  boxShadow: `0 18px 60px ${theme.accentSoft}`,
+                }}
+              >
+                {t.bookCall}
+              </a>
+              <span className="text-[0.76rem] uppercase tracking-[0.2em]" style={{ color: theme.softText }}>
+                {t.websiteFormats}
+              </span>
+            </div>
+          </div>
+
+          <div
+            className="rounded-[1.55rem] border px-5 py-5 xl:justify-self-end"
+            style={{
+              borderColor: resolvedTheme === "light" ? "rgba(31,28,44,0.1)" : "rgba(255,255,255,0.08)",
+              backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.46)" : "rgba(6,9,18,0.34)",
+              backdropFilter: "blur(14px)",
+            }}
+          >
+            <div
+              className="text-[0.68rem] font-medium uppercase tracking-[0.24em]"
+              style={{ color: resolvedTheme === "light" ? "rgba(34,28,52,0.68)" : "rgba(236,229,255,0.72)" }}
+            >
+              {t.websiteEyebrow}
+            </div>
+            <p className="mt-3 text-[1rem] leading-7 sm:text-[1.04rem]" style={{ color: resolvedTheme === "light" ? "#211c2e" : "#f5f2ff" }}>
+              {t.websiteVisualTitle}
+            </p>
+            <div
+              className="mt-5 text-[0.78rem] uppercase tracking-[0.2em]"
+              style={{ color: theme.softText }}
+            >
+              {t.websiteVisualCaption}
+            </div>
+          </div>
+        </div>
+
+        <div className="relative z-10 mt-14">
+          <div
+            className="mb-8 h-px w-full"
+            style={{
+              background: `linear-gradient(90deg, ${theme.accent} 0%, ${theme.accentSoft} 30%, transparent 72%)`,
+              opacity: 0.6,
+            }}
+          />
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {t.websiteCapabilities.map((capability, index) => (
+              <div
+                key={capability.title}
+                className="group relative overflow-hidden rounded-[1.65rem] p-5 transition-all duration-300 lg:p-6"
+                style={{
+                  backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.24)" : "rgba(14,16,22,0.38)",
+                  boxShadow: resolvedTheme === "light" ? "inset 0 0 0 1px rgba(31,28,44,0.08)" : "inset 0 0 0 1px rgba(255,255,255,0.08)",
+                  backdropFilter: resolvedTheme === "light" ? "blur(4px)" : "blur(7px)",
+                }}
+              >
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      resolvedTheme === "light"
+                        ? "linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.04) 100%)"
+                        : "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%)",
+                  }}
+                />
+                <div
+                  className="absolute left-0 top-0 h-full w-px"
+                  style={{
+                    background: `linear-gradient(180deg, ${theme.accent} 0%, ${theme.accentSoft} 100%)`,
+                    opacity: 0.72,
+                  }}
+                />
+
+                <div className="relative z-10">
+                  <div className="flex items-start justify-between gap-4">
+                    <div
+                      className="flex h-10 w-10 items-center justify-center rounded-full border text-[0.72rem] font-semibold uppercase tracking-[0.2em]"
+                      style={{
+                        borderColor: resolvedTheme === "light" ? "rgba(31,28,44,0.1)" : "rgba(255,255,255,0.1)",
+                        backgroundColor: resolvedTheme === "light" ? "rgba(255,255,255,0.22)" : "rgba(255,255,255,0.04)",
+                        color: theme.accent,
+                      }}
+                    >
+                      0{index + 1}
+                    </div>
+
+                    <div
+                      className="flex h-10 w-10 items-center justify-center rounded-2xl border"
+                      style={iconTileStyle}
+                    >
+                      {index === 0 ? (
+                        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <rect x="3.5" y="5" width="17" height="14" rx="2.5" />
+                          <path d="M3.5 9h17M8 14h4M15 14h1.5" />
+                        </svg>
+                      ) : index === 1 ? (
+                        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <path d="M6 16 10 12l3 3 5-7" />
+                          <path d="M6 6h12" />
+                        </svg>
+                      ) : (
+                        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <path d="M4 7h16M7 4v16" />
+                          <path d="M17 8 8 17" />
+                        </svg>
+                      )}
+                    </div>
+                  </div>
+
+                  <h3 className="font-display mt-6 max-w-[15ch] text-[1.12rem] font-semibold leading-[1.15] sm:text-[1.18rem] lg:text-[1.26rem]">
+                    {capability.title}
+                  </h3>
+
+                  <p className="mt-4 text-[0.93rem] leading-7 lg:text-[0.98rem]" style={{ color: theme.mutedText }}>
+                    {capability.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </RevealBlock>
+
+      <RevealBlock
         variant="expand"
         className={`relative overflow-hidden ${sectionShell} border-t`}
         style={{ borderColor: theme.border }}
@@ -1932,13 +2619,13 @@ export default function StudioPage() {
                 {t.engineeringEyebrow}
               </div>
 
-              <h2 className="font-display mt-5 max-w-[11ch] text-[2rem] font-bold leading-[1.01] sm:text-[2.35rem] lg:text-[3rem]">
+              <h2 className="font-display mt-4 max-w-[11ch] text-[1.95rem] font-bold leading-[1.03] sm:text-[2.25rem] lg:text-[2.85rem]">
                 {t.engineeringTitle}
               </h2>
 
               <div className="mt-7 grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start">
                 <p
-                  className="max-w-3xl text-[0.98rem] leading-7 sm:text-[1.04rem] lg:text-[1.08rem] lg:leading-8"
+                  className={sectionIntroClass}
                   style={{ color: theme.mutedText }}
                 >
                   {t.engineeringDescription}
@@ -1991,7 +2678,7 @@ export default function StudioPage() {
             </div>
           </div>
 
-          <div className="mt-12">
+          <div className="mt-14">
             <div
               className="mb-8 h-px w-full"
               style={{
@@ -2079,20 +2766,20 @@ export default function StudioPage() {
             >
               {t.enterpriseReady}
             </div>
-            <h2 className="font-display mt-5 text-[1.9rem] font-bold sm:text-[2.15rem] lg:text-[2.65rem]">
+            <h2 className={sectionTitleClass}>
               {t.executionModel}
             </h2>
           </div>
 
           <p
-            className="max-w-3xl text-[0.95rem] leading-7 lg:ml-auto lg:text-[1.02rem] lg:leading-8"
+            className={`${sectionIntroClass} lg:ml-auto`}
             style={{ color: theme.mutedText }}
           >
             {t.process.map((item) => item.title).join(" • ")}
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {t.process.map((item, index) => (
             <div
               key={item.step}
@@ -2150,7 +2837,7 @@ export default function StudioPage() {
                   </div>
                 </div>
 
-                <h3 className="font-display mt-10 text-[1.28rem] font-semibold sm:text-[1.38rem] lg:text-[1.56rem]">
+                <h3 className="font-display mt-8 text-[1.22rem] font-semibold sm:text-[1.34rem] lg:text-[1.5rem]">
                   {item.title}
                 </h3>
                 <div
@@ -2193,20 +2880,20 @@ export default function StudioPage() {
             >
               {t.businessOutcomes}
             </div>
-            <h2 className="font-display mt-5 text-[1.9rem] font-bold sm:text-[2.15rem] lg:text-[2.55rem]">
+            <h2 className={sectionTitleClass}>
               {t.businessOutcomes}
             </h2>
           </div>
 
           <p
-            className="max-w-3xl text-[0.95rem] leading-7 lg:ml-auto lg:text-[1.02rem] lg:leading-8"
+            className={`${sectionIntroClass} lg:ml-auto`}
             style={{ color: theme.mutedText }}
           >
             Clearer operations, less manual drag, and systems that support better decisions as the business scales.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 2xl:grid-cols-4">
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 2xl:grid-cols-4">
           {t.outcomes.map((outcome, index) => (
             <div
               key={outcome}
@@ -2253,7 +2940,7 @@ export default function StudioPage() {
                   </div>
                 </div>
 
-                <h3 className="font-display mt-10 text-[1.08rem] font-semibold leading-7 lg:text-[1.18rem]" style={{ color: theme.text }}>
+                <h3 className="font-display mt-8 text-[1.08rem] font-semibold leading-7 lg:text-[1.18rem]" style={{ color: theme.text }}>
                   {outcome}
                 </h3>
 
@@ -2294,9 +2981,9 @@ export default function StudioPage() {
               </div>
             </div>
 
-            <h2 className="font-display text-[2rem] font-bold sm:text-[2.25rem] lg:text-[2.7rem]">{t.contactTitle}</h2>
+            <h2 className="font-display mt-1 text-[1.95rem] font-bold sm:text-[2.2rem] lg:text-[2.7rem]">{t.contactTitle}</h2>
 
-            <p className="mt-4 max-w-2xl text-[0.98rem] leading-7 sm:text-[1.04rem] lg:text-[1.12rem] lg:leading-8" style={{ color: theme.mutedText }}>
+            <p className="mt-5 max-w-2xl text-[0.98rem] leading-7 sm:text-[1.03rem] lg:text-[1.08rem] lg:leading-8" style={{ color: theme.mutedText }}>
               {t.contactDescription}
             </p>
 
