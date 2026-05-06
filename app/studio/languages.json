@@ -1,0 +1,24 @@
+{
+  "countries": {
+    "en": {
+      "label": "English",
+      "enabled": true
+    },
+    "de": {
+      "label": "Deutsch",
+      "enabled": false
+    },
+    "fr": {
+      "label": "Francais",
+      "enabled": false
+    },
+    "el": {
+      "label": "Ellinika",
+      "enabled": false
+    },
+    "ro": {
+      "label": "Romana",
+      "enabled": true
+    }
+  }
+}

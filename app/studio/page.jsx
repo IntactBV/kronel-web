@@ -2,24 +2,71 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
+import languageSettings from "./languages.json";
 
 /* Ultra high-conversion enterprise landing for studio.kronel.io */
 
 const PRIMARY = "#5F24E6";
 const SECONDARY = "#7a3cff";
 const THEME_ORDER = ["system", "light", "dark"];
-const LANGUAGES = ["en", "de", "fr", "el", "ro"];
+const LANGUAGE_SETTINGS = languageSettings.countries ?? {};
+const isLanguageEnabled = (config) =>
+  typeof config === "boolean" ? config : config?.enabled !== false;
+const LANGUAGES = Object.entries(LANGUAGE_SETTINGS)
+  .filter(([, config]) => isLanguageEnabled(config))
+  .map(([languageCode]) => languageCode);
+const DEFAULT_LANGUAGE = LANGUAGES[0] ?? "en";
 const STORAGE_KEYS = {
   mode: "kronel.studio.themeMode",
   language: "kronel.studio.language",
 };
-const LANGUAGE_LABELS = {
-  en: "English",
-  de: "Deutsch",
-  fr: "Francais",
-  el: "Ellinika",
-  ro: "Romana",
-};
+const LANGUAGE_LABELS = Object.fromEntries(
+  Object.entries(LANGUAGE_SETTINGS).map(([languageCode, config]) => [
+    languageCode,
+    languageSettings.labels?.[languageCode] ?? config?.label ?? languageCode.toUpperCase(),
+  ]),
+);
+const ROMANIAN_LANGUAGE_CODE = "ro";
+const ROMANIA_COUNTRY_CODE = "RO";
+const ROMANIA_TIME_ZONE = "Europe/Bucharest";
+
+function getCookieValue(name) {
+  if (typeof document === "undefined") return "";
+
+  return (
+    document.cookie
+      .split("; ")
+      .find((cookie) => cookie.startsWith(`${name}=`))
+      ?.split("=")[1] ?? ""
+  );
+}
+
+function getDetectedDefaultLanguage() {
+  if (!LANGUAGES.includes(ROMANIAN_LANGUAGE_CODE)) {
+    return DEFAULT_LANGUAGE;
+  }
+
+  const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
+  const usesRomanian = browserLanguages.some((browserLanguage) =>
+    browserLanguage?.toLowerCase().startsWith("ro"),
+  );
+
+  if (usesRomanian) {
+    return ROMANIAN_LANGUAGE_CODE;
+  }
+
+  const countryCode = decodeURIComponent(getCookieValue("kronel.country")).toUpperCase();
+  if (countryCode === ROMANIA_COUNTRY_CODE) {
+    return ROMANIAN_LANGUAGE_CODE;
+  }
+
+  const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  if (timeZone === ROMANIA_TIME_ZONE) {
+    return ROMANIAN_LANGUAGE_CODE;
+  }
+
+  return DEFAULT_LANGUAGE;
+}
 
 const OUTCOME_LONG_COPY = {
   en: [
@@ -1149,7 +1196,7 @@ function LanguageSwitcher({ language, onChange, theme, className = "" }) {
                   color: active ? theme.text : theme.mutedText,
                 }}
               >
-                <span className="text-[0.78rem] font-medium lg:text-[0.9rem]">{LANGUAGE_LABELS[lang]}</span>
+                <span className="text-[0.78rem] font-medium lg:text-[0.9rem]">{LANGUAGE_LABELS[lang] ?? lang.toUpperCase()}</span>
                 <span className="text-[0.68rem] uppercase tracking-[0.22em]">{lang}</span>
               </button>
             );
@@ -1276,7 +1323,8 @@ const themeMap = {
 export default function StudioPage() {
   const [mode, setMode] = useState("system");
   const [systemTheme, setSystemTheme] = useState("dark");
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(DEFAULT_LANGUAGE);
+  const [hasLoadedPreferences, setHasLoadedPreferences] = useState(false);
   const [contactForm, setContactForm] = useState({
     name: "",
     email: "",
@@ -1321,7 +1369,11 @@ export default function StudioPage() {
 
     if (storedLanguage && LANGUAGES.includes(storedLanguage)) {
       setLanguage(storedLanguage);
+    } else {
+      setLanguage(getDetectedDefaultLanguage());
     }
+
+    setHasLoadedPreferences(true);
 
     const media = window.matchMedia("(prefers-color-scheme: dark)");
     const syncTheme = () => setSystemTheme(media.matches ? "dark" : "light");
@@ -1332,14 +1384,16 @@ export default function StudioPage() {
   }, []);
 
   useEffect(() => {
+    if (!hasLoadedPreferences) return;
     if (typeof window === "undefined") return;
     window.localStorage.setItem(STORAGE_KEYS.mode, mode);
-  }, [mode]);
+  }, [hasLoadedPreferences, mode]);
 
   useEffect(() => {
+    if (!hasLoadedPreferences) return;
     if (typeof window === "undefined") return;
     window.localStorage.setItem(STORAGE_KEYS.language, language);
-  }, [language]);
+  }, [hasLoadedPreferences, language]);
 
   const resolvedTheme = mode === "system" ? systemTheme : mode;
   const theme = useMemo(() => themeMap[resolvedTheme], [resolvedTheme]);
