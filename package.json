@@ -16,5 +16,12 @@
     "react-dom": "19.2.5",
     "tailwindcss": "^4.2.4"
   },
-  "packageManager": "yarn@4.14.1"
+  "packageManager": "yarn@4.14.1",
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/generator": "^7.29.1",
+    "@babel/parser": "^7.29.3",
+    "@babel/preset-react": "^7.28.5",
+    "@babel/traverse": "^7.29.0"
+  }
 }

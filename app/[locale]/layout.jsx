@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../globals.css";
 
 export const metadata = {
   title: "Kronel Studio",
@@ -10,9 +10,9 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params: { locale } }) {
   return (
-    <html lang="en">
+    <html lang={locale || "en"}>
       <body>{children}</body>
     </html>
   );
