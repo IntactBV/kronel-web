@@ -16,6 +16,11 @@ async function getMessages() {
 export const metadata = {
   title: "Studio Messages",
   description: "Saved contact form submissions for Kronel Studio.",
+  robots: {
+    index: false,
+    follow: false,
+    noarchive: true,
+  },
 };
 
 export default async function StudioMessagesPage() {

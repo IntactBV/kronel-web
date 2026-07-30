@@ -1,8 +1,17 @@
-import HeroSection from "../../../components/studio/HeroSection";\nimport VisionSection from "../../../components/studio/VisionSection";\nimport EngineeringSection from "../../../components/studio/EngineeringSection";\nimport MobileSection from "../../../components/studio/MobileSection";\nimport WebsiteSection from "../../../components/studio/WebsiteSection";\nimport InternalToolsSection from "../../../components/studio/InternalToolsSection";\nimport ProcessSection from "../../../components/studio/ProcessSection";\nimport OutcomesSection from "../../../components/studio/OutcomesSection";\nimport ContactSection from "../../../components/studio/ContactSection";\nimport FooterSection from "../../../components/studio/FooterSection";\n\n"use client";
+"use client";
 
-import Image from "next/image";
+import HeroSection from "../../../components/studio/HeroSection";
+import VisionSection from "../../../components/studio/VisionSection";
+import EngineeringSection from "../../../components/studio/EngineeringSection";
+import MobileSection from "../../../components/studio/MobileSection";
+import WebsiteSection from "../../../components/studio/WebsiteSection";
+import InternalToolsSection from "../../../components/studio/InternalToolsSection";
+import ProcessSection from "../../../components/studio/ProcessSection";
+import OutcomesSection from "../../../components/studio/OutcomesSection";
+import ContactSection from "../../../components/studio/ContactSection";
+import FooterSection from "../../../components/studio/FooterSection";
+
 import { useEffect, useMemo, useRef, useState } from "react";
-import languageSettings from "./languages.json";
 
 /* Ultra high-conversion enterprise landing for studio.kronel.io */
 

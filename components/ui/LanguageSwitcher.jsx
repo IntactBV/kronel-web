@@ -1,10 +1,13 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import { LANGUAGES, LANGUAGE_LABELS } from '../../data/studio-data';
 
 export default function LanguageSwitcher({ language, onChange, theme, className = "" }) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef(null);
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handlePointerDown = (event) => {
@@ -92,6 +95,14 @@ export default function LanguageSwitcher({ language, onChange, theme, className 
                 aria-selected={active}
                 onClick={() => {
                   onChange(lang);
+                  document.cookie = `kronel.studio.language=${lang}; Path=/; Max-Age=31536000; SameSite=Lax`;
+                  const segments = pathname.split("/");
+                  if (LANGUAGES.includes(segments[1])) {
+                    segments[1] = lang;
+                    router.push(segments.join("/") || `/${lang}/studio`);
+                  } else {
+                    router.push(`/${lang}${pathname === "/" ? "/studio" : pathname}`);
+                  }
                   setOpen(false);
                 }}
                 className="flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left transition"
@@ -110,4 +121,3 @@ export default function LanguageSwitcher({ language, onChange, theme, className 
     </div>
   );
 }
-

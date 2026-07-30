@@ -1,4 +1,4 @@
-import languageSettings from "../app/studio/languages.json";
+import languageSettings from "../app/[locale]/studio/languages.json";
 
 export const PRIMARY = "#5F24E6";
 export const SECONDARY = "#7a3cff";
@@ -40,8 +40,8 @@ export function getDetectedDefaultLanguage() {
     return DEFAULT_LANGUAGE;
   }
 
-  export const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
-  export const usesRomanian = browserLanguages.some((browserLanguage) =>
+  const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
+  const usesRomanian = browserLanguages.some((browserLanguage) =>
     browserLanguage?.toLowerCase().startsWith("ro"),
   );
 
@@ -49,12 +49,12 @@ export function getDetectedDefaultLanguage() {
     return ROMANIAN_LANGUAGE_CODE;
   }
 
-  export const countryCode = decodeURIComponent(getCookieValue("kronel.country")).toUpperCase();
+  const countryCode = decodeURIComponent(getCookieValue("kronel.country")).toUpperCase();
   if (countryCode === ROMANIA_COUNTRY_CODE) {
     return ROMANIAN_LANGUAGE_CODE;
   }
 
-  export const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   if (timeZone === ROMANIA_TIME_ZONE) {
     return ROMANIAN_LANGUAGE_CODE;
   }

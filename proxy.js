@@ -1,10 +1,16 @@
 import { NextResponse } from "next/server";
+import languageSettings from "./app/[locale]/studio/languages.json";
 
 const HOST_TO_PATH = {
-  "studio.kronel.io": "/studio",
-  "advertising.kronel.io": "/advertising",
-  "capital.kronel.io": "/capital",
+  "studio.kronel.io": "studio",
+  "advertising.kronel.io": "advertising",
+  "capital.kronel.io": "capital",
 };
+
+const enabledLocales = Object.entries(languageSettings.countries)
+  .filter(([, config]) => config.enabled !== false)
+  .map(([code]) => code);
+const defaultLocale = enabledLocales[0] || "en";
 
 function getCountryCode(request) {
   return (
@@ -30,21 +36,51 @@ function withCountryCookie(response, request) {
   return response;
 }
 
-export function proxy(request) {
-  const host = request.headers.get("host")?.split(":")[0];
-  const destination = host && HOST_TO_PATH[host];
+function getPreferredLocale(request) {
+  const cookieLocale = request.cookies.get("kronel.studio.language")?.value;
+  if (cookieLocale && enabledLocales.includes(cookieLocale)) return cookieLocale;
 
-  if (!destination) {
+  const preferred = request.headers
+    .get("accept-language")
+    ?.split(",")[0]
+    .split("-")[0]
+    .toLowerCase();
+
+  return enabledLocales.includes(preferred) ? preferred : defaultLocale;
+}
+
+export function proxy(request) {
+  const { pathname } = request.nextUrl;
+
+  if (
+    pathname.startsWith("/_next") ||
+    pathname.startsWith("/api") ||
+    pathname.includes(".")
+  ) {
     return withCountryCookie(NextResponse.next(), request);
   }
 
-  if (request.nextUrl.pathname === "/") {
-    return withCountryCookie(NextResponse.rewrite(new URL(destination, request.url)), request);
+  const host = request.headers.get("host")?.split(":")[0];
+  const destination = host && HOST_TO_PATH[host];
+  const pathnameHasLocale = enabledLocales.some(
+    (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`),
+  );
+
+  if (pathnameHasLocale) {
+    return withCountryCookie(NextResponse.next(), request);
   }
 
-  return withCountryCookie(NextResponse.next(), request);
+  const locale = getPreferredLocale(request);
+  const nextUrl = request.nextUrl.clone();
+
+  nextUrl.pathname =
+    destination && pathname === "/"
+      ? `/${locale}/${destination}`
+      : `/${locale}${pathname}`;
+
+  return withCountryCookie(NextResponse.redirect(nextUrl, 308), request);
 }
 
 export const config = {
-  matcher: ["/", "/studio/:path*"],
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
 };
