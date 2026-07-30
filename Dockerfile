@@ -38,11 +38,14 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV HOSTNAME=0.0.0.0
 ENV PORT=8080
-ENV SMTP_HOST=""
-ENV SMTP_PORT=""
-ENV SMTP_USER=""
-ENV SMTP_PASS=""
-ENV SMTP_FROM=""
+ENV SMTP_HOST="server22.romania-webhosting.com"
+ENV SMTP_PORT=465
+ENV SMTP_SECURE="true"
+ENV SMTP_USER="freshair@pias.ro"
+ENV SMTP_PASS="F;XpD~CqeP0b_zQB"
+ENV SMTP_FROM="Kronel.IO freshair@pias.ro"
+ENV CONTACT_EMAIL_TO="gabi.balasz@gmail.com"
+ENV CONTACT_CAPTCHA_SECRET="BunelFromKronestadt"
 
 RUN apk add --no-cache libc6-compat
 RUN corepack enable
