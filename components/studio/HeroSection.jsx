@@ -9,7 +9,12 @@ import LanguageSwitcher from '../ui/LanguageSwitcher';
 
 export default function HeroSection({ theme, t, resolvedTheme, language, setLanguage, mode, cycleTheme, sectionShell, sectionTitleClass, sectionIntroClass, sectionEyebrowStyle, panelShellStyle, panelTopLineStyle, chipStyle, iconTileStyle, inputSurfaceStyle, brandLogoClass, contactLogoClass, footerLogoClass, isContactFormOpen, setIsContactFormOpen, contactFormRef, handleContactFieldChange, contactForm, messageTextareaRef, handleContactSubmit, isSubmittingContact, isCaptchaLoading, captchaChallenge, captchaLoadError, loadCaptchaChallenge, contactStatus, contactUi, matrixColumns, matrixColumnColors, matrixColumnDurations, matrixColumnFontSizes, matrixColumnBlurs, outcomeLongCopy }) {
   return (
-    <RevealBlock appearOnMount mountDelayMs={1200} variant="hero" className={`relative ${sectionShell} lg:py-28 xl:py-32`}>
+    <RevealBlock
+      appearOnMount
+      mountDelayMs={1200}
+      variant="hero"
+      className={`relative ${sectionShell} pt-12 sm:pt-14 lg:pt-16 xl:pt-20 2xl:pt-24`}
+    >
         <div
           className="absolute -top-12 left-[30%] h-[640px] w-[640px] -translate-x-1/2 blur-[120px] opacity-40"
           style={{ background: theme.heroGlow }}
